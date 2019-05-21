@@ -26,26 +26,23 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-593da566f943fa3a032f.js"
+    "url": "webpack-runtime-43c768c09e3d6dabcb68.js"
   },
   {
-    "url": "styles.a2bb5fc4c3ff93f6e8ef.css"
+    "url": "styles.0967b04e1b8dd0617d52.css"
   },
   {
     "url": "styles-e2907a18c33d8fd17df9.js"
   },
   {
-    "url": "app-3dd49fddc30411a0cb58.js"
+    "url": "app-1c569eb67b878d0088d0.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-97b4358ce9c45abe93f4.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "5a64efdbbbe580a2fd13db217393e1cb"
-  },
-  {
-    "url": "static/d/604/path---offline-plugin-app-shell-fallback-a-30-c5a-BawJvyh36KKFwbrWPg4a4aYuc8.json"
+    "revision": "d2f3bd3768984795eae14bb2a1f891aa"
   },
   {
     "url": "manifest.json",
@@ -53,7 +50,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "b54ab63aa853d43633bd8d711ac0305c"
+    "revision": "4cdb222d828f6fb1d081721d440080b9"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -74,7 +71,7 @@ const navigationRoute = new workbox.routing.NavigationRoute(({ event }) => {
   return idbKeyval.get(WHITELIST_KEY).then((customWhitelist = []) => {
     // Respond with the offline shell if we match the custom whitelist
     if (customWhitelist.includes(pathname)) {
-      const offlineShell = `/nahidsaikat.com/offline-plugin-app-shell-fallback/index.html`
+      const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
       const cacheName = workbox.core.cacheNames.precache
 
       return caches.match(offlineShell, { cacheName }).then(cachedResponse => {
@@ -146,7 +143,7 @@ const messageApi = {
 
     pathnames = pathnames.map(({ pathname, includesPrefix }) => {
       if (!includesPrefix) {
-        return `/nahidsaikat.com${pathname}`
+        return `${pathname}`
       } else {
         return pathname
       }
