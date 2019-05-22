@@ -187,5 +187,6 @@ module.exports = {
       }
     },
     'gatsby-plugin-flow',
-  ]
+  ],
+  pathPrefix: "/nahidsaikat.com",
 };
