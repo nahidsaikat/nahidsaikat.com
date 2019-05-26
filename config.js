@@ -1,12 +1,12 @@
 'use strict';
 
 module.exports = {
-  url: 'https://nahidsaikat.com/',
+  url: 'https://www.nahidsaikat.com/',
   title: 'Blog by Nahid Saikat',
   subtitle: 'Pythonista | JavaScripter | Software Engineer | Reader',
   copyright: '© All rights reserved.',
   disqusShortname: '',
-  postsPerPage: 4,
+  postsPerPage: 6,
   googleAnalyticsId: 'UA-73379983-2',
   menu: [
     {
@@ -27,8 +27,8 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'Pythonista | JavaScripter | Software Engineer | Reader',
     contacts: {
-      email: '#',
-      telegram: '#',
+      email: 'hello@nahidsaikat.com',
+      facebook: 'nahid.saikat.944',
       twitter: 'nahidsaikatft40',
       github: 'nahidsaikat',
       rss: '#',
