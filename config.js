@@ -28,11 +28,11 @@ module.exports = {
     bio: 'Pythonista | JavaScripter | Software Engineer | Reader',
     contacts: {
       email: 'hello@nahidsaikat.com',
+      github: 'nahidsaikat',
+      telegram: '#',
       facebook: 'nahid.saikat.944',
       twitter: 'nahidsaikatft40',
-      github: 'nahidsaikat',
-      rss: '#',
-      vkontakte: '#'
+      rss: '#'
     }
   }
 };
