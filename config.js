@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  url: 'https://nahidsaikat.github.io/nahidsaikat.com/',
+  url: 'https://nahidsaikat.com/',
   title: 'Blog by Nahid Saikat',
   subtitle: 'Pythonista | JavaScripter | Software Engineer | Reader',
   copyright: '© All rights reserved.',

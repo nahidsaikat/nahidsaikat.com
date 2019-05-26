@@ -16,6 +16,7 @@ const Layout = ({ children, title, description }: Props) => (
       <html lang="en" />
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta name="yandex-verification" content="bd1e0903b8785563" />
     </Helmet>
     {children}
   </div>

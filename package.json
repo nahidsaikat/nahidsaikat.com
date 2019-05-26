@@ -19,7 +19,6 @@
     "release": "standard-version"
   },
   "repository": "https://github.com/nahidsaikat/nahidsaikat.com",
-  "homepage": "https://nahidsaikat.github.io/nahidsaikat.com",
   "author": "nahidsaikat <nahidsaikatft40@gmail.com>",
   "license": "MIT",
   "keywords": [
