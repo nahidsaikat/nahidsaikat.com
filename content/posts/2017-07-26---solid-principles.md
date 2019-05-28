@@ -5,6 +5,9 @@ template: "post"
 draft: false
 slug: "/blog/2017/07/26/solid-principles"
 category: "Design Principle"
+tags:
+  - "SOLID"
+  - "Design Principle"
 description: "SOLID principle is one of the most well known principle in software community. It is intendent to make software designs more understandable, flexible and maintainable."
 ---
 
