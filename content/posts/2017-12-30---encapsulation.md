@@ -4,12 +4,12 @@ date: "2017-12-30T22:12:03.284Z"
 template: "post"
 draft: false
 slug: "/blog/2017/12/30/encapsulation/"
-category: "OOP"
+category: "Programming Paradism"
 tags:
   - "OOP"
   - "Language"
   - "Programming Paradism"
-description: "German inventor Johannes Gutenberg developed a method of movable type and used it to create one of the western world’s first major printed books, the “Forty–Two–Line” Bible."
+description: "Encapsulation is the process that binds data and functions which operates on the data under a single entity. It is one of the most important four features of Object Oriented Programming."
 ---
 
 ![Encapsulation](/media/pixabay/encapsulation.jpg "Encapsulation")
