@@ -1,6 +1,10 @@
 ---
-title: "Index"
+title: "INDEX"
 template: "page"
 ---
 
-This is the index of the blog list.
+## Design Principle
+* [Brief Statement of SOLID Principles](http://nahidsaikat.com/blog/2017/07/26/solid-principles "Solid Principle")
+
+## Object Oriented Programming
+* [Encapsulation (OOP)](http://nahidsaikat.com/blog/2017/12/30/encapsulation/ "Encapsulation")
