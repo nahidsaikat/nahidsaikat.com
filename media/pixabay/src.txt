@@ -1,1 +1,2 @@
 encapsulation.jpg	https://pixabay.com/photos/tablets-drug-encapsulate-medical-4028232/
+inheritance.jpg		https://pixabay.com/illustrations/microbiology-dna-people-structure-163521/
