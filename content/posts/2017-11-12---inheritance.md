@@ -9,7 +9,7 @@ tags:
   - "OOP"
   - "Language"
   - "Programming Paradism"
-description: "Encapsulation is the process that binds data and functions which operates on the data under a single entity. It is one of the most important four features of Object Oriented Programming."
+description: "Inheritance is the process of acquiring the properties and functionalities of another class. An object is a container that contains properties and methods to operate of these properties."
 ---
 
 ![Inheritance](/media/pixabay/inheritance.jpg "Inheritance")
