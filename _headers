@@ -78,13 +78,6 @@
   Link: </styles-e2907a18c33d8fd17df9.js>; rel=preload; as=script
   Link: </1-c571db2944e3a31651ff.js>; rel=preload; as=script
   Link: </component---src-templates-page-template-js-40877b8fc54aa1ccb56e.js>; rel=preload; as=script
-/pages/about/
-  Link: </webpack-runtime-a22cb6f465c12a067506.js>; rel=preload; as=script
-  Link: </styles-e2907a18c33d8fd17df9.js>; rel=preload; as=script
-  Link: </app-e1b78f9a8c23343800e4.js>; rel=preload; as=script
-  Link: </styles-e2907a18c33d8fd17df9.js>; rel=preload; as=script
-  Link: </1-c571db2944e3a31651ff.js>; rel=preload; as=script
-  Link: </component---src-templates-page-template-js-40877b8fc54aa1ccb56e.js>; rel=preload; as=script
 /pages/contacts/
   Link: </webpack-runtime-a22cb6f465c12a067506.js>; rel=preload; as=script
   Link: </styles-e2907a18c33d8fd17df9.js>; rel=preload; as=script
@@ -100,6 +93,13 @@
   Link: </1-c571db2944e3a31651ff.js>; rel=preload; as=script
   Link: </2-840a1c2b6eca0fdf4d4a.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-2b80dd3ff7b5dd36d658.js>; rel=preload; as=script
+/pages/about/
+  Link: </webpack-runtime-a22cb6f465c12a067506.js>; rel=preload; as=script
+  Link: </styles-e2907a18c33d8fd17df9.js>; rel=preload; as=script
+  Link: </app-e1b78f9a8c23343800e4.js>; rel=preload; as=script
+  Link: </styles-e2907a18c33d8fd17df9.js>; rel=preload; as=script
+  Link: </1-c571db2944e3a31651ff.js>; rel=preload; as=script
+  Link: </component---src-templates-page-template-js-40877b8fc54aa1ccb56e.js>; rel=preload; as=script
 /blog/the-origins-of-social-stationery-lettering
   Link: </webpack-runtime-a22cb6f465c12a067506.js>; rel=preload; as=script
   Link: </styles-e2907a18c33d8fd17df9.js>; rel=preload; as=script
