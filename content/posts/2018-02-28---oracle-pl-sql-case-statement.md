@@ -12,8 +12,8 @@ tags:
 description: "Oracle PL/SQL provides case statement control which is used in decision making. It has similarities with the IF statement control of PL/SQL. In case statement there is a selector, based on the evaluated value of the selector a block of statement will be executed. The selector will be executed only once."
 ---
 
-![PL/SQL Block](/media/pixabay/pl-sql-block.png "PL/SQL Block")
-[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/illustrations/cubes-assorted-random-toys-677092/)
+![PL/SQL Case Statement](/media/pixabay/case-statement.jpg "PL/SQL Case Statement")
+[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/branch-sunset-nature-tree-sunlight-1753745/)
 
 **Simple Case Statement**
 
