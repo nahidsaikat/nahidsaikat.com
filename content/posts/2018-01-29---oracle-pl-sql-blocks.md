@@ -3,7 +3,7 @@ title: "Oracle PL/SQL Blocks"
 date: "2018-01-29T22:12:03.284Z"
 template: "post"
 draft: false
-slug: "/2018/01/29/oracle-pl-sql-blocks/"
+slug: "/blog/2018/01/29/oracle-pl-sql-blocks/"
 category: "Database"
 tags:
   - "PL/SQL"

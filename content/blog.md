@@ -11,4 +11,4 @@ template: "page"
 * [Inheritance (OOP)](https://nahidsaikat.com/blog/2017/11/12/inheritance/ "Inheritance")
 
 ## Database
-* [Oracle PL/SQL Blocks](https://nahidsaikat.com/2018/01/29/oracle-pl-sql-blocks/ "Oracle PL/SQL Blocks")
+* [Oracle PL/SQL Blocks](https://nahidsaikat.com/blog/2018/01/29/oracle-pl-sql-blocks/ "Oracle PL/SQL Blocks")
