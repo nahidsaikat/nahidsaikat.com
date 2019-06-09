@@ -15,67 +15,86 @@ description: "Polymorphism is one of the most important concepts of object orien
 ![Encapsulation](/media/pixabay/encapsulation.jpg "Encapsulation")
 [<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/tablets-drug-encapsulate-medical-4028232/)
 
-**What is Encapsulation?**
-
-Encapsulation is the process that binds data and functions which operates on the data under a single entity. It is one of the most important four features of Object Oriented Programming. Other features are Abstraction, Inheritance and Polymorphism. One of the greatest implementation of encapsulation is class. Because class binds the data and functions that operates on that data together in single unit.
-
-**Real world example**
-
-In restaurants there are many sections. Waiter section, chef section, billing section. When customer goes to the restaurant the waiter collects the order and pass the order to the chef section. The chef section starts their process when order is passed to them. When food is ready they inform and pass the food to waiter and waiter serves the food. Finally billing section bills for the food. These different section do there work independently without knowing other sections. As waiter doesn't know what are the ingredient of the food as well as the recipe. He just needs to pass the order to chef section and get food. All other things of chef section are hidden for him. That is encapsulation, the ingredient and the recipe are bind in one unit chef section. Waiter section just needs a way to pass the order and get the food when done.
-
-**Example**
-
-To implement the encapsulation in any language like Java, C# or C++ first create private data member and then create public methods  to set and get the data. The method to set data is called setter and the method to get data is called getter.
-
+Polymorphism is one of the most important concepts of object oriented programming. It comes from two Greek words, Poly and Morph. Poly means Many and Morph means Form. So polymorphism is the ability of functions or objects to take multiple forms based on the data or object. Suppose we have a Shape class which has a draw method that draws something. As Shape is a generic class so it does not draw a specific thing.
+ 
 ```csharp
-class Student{
-    private int serial;
-    private String stuName;
-    private int stuAge;
-
-    //Getter methods
-    public int getSerial(){
-        return serial;
+public class Shape
+{
+    public virtual void Draw()
+    {
+        Console.WriteLine("Performing generic drawing");
     }
-
-    public String getStuName(){
-        return stuName;
-    }
-
-    public int getStuAge(){
-        return stuAge;
-    }
-
-    //Setter methods
-    public void setStuAge(int newValue){
-        stuAge = newValue;
-    }
-
-    public void setStuName(String newValue){
-        stuName = newValue;
-    }
-
-    public void setSerial(int newValue){
-        serial = newValue;
-    }
-}
-public class Department{
-    public static void main(String args[]){
-         Student obj = new Student();
-         obj.setStuName("Mario");
-         obj.setStuAge(32);
-         obj.setSerial(112233);
-         System.out.println("Student Name: " + obj.getStuName());
-         System.out.println("Student Serial: " + obj.getSerial());
-         System.out.println("Student Age: " + obj.getStuAge());
-    } 
 }
 ```
 
-**Advantages**
+Now lets say we have two more class Rectangle and Circle that inherits the Shape class.  Rectangle and Circle class will also have Draw method and will draw rectangle and circle respectively.
 
-Data can be made read only or write only at any time. If no setter is given it becomes read only. Similarly if getter is not present then data becomes write only. In setter and getter methods any logic can be applied. So a validation process can be integrated before setting the data.
-A class is full control of data that is stored in its fields.
-Encapsulation improves readability and maintainability of the code as well as it reduces human errors.
- 
+```csharp
+class Rectangle : Shape
+{
+    public override void Draw()
+    {
+        Console.WriteLine("Drawing a rectangle");
+    }
+}
+
+class Circle : Shape
+{
+    public override void Draw()
+    {
+        Console.WriteLine("Drawing a circle");
+    }
+}
+```
+
+Now we can use these classes in main program and call their Draw method and the specific class object will call their own version of  Draw method.
+
+```csharp
+class Program
+{
+    static void Main(string[] args)
+    {
+        var shapes = new List<Shape>
+        {
+            new Rectangle(),
+            new Circle()
+        };
+        foreach (var shape in shapes)
+        {
+            shape.Draw();
+        }
+        Console.WriteLine("Press any key to exit.");
+        Console.ReadKey();
+    }
+}
+```
+
+This is the perfect example of polymorphism. We have a common Shape class and every shape inherits it and specify their own Draw method. When we call the draw method, the specific shape will call their own version of Draw method. Thus we can say that the method is called based upon the object on which it has been called.
+
+There are two types of polymorphism. Dynamic polymorphism and static polymorphism. The example above is an example of dynamic polymorphism. Because which Draw method will be called is decided at run time. Here we can come up with the statement that dynamic polymorphism is where method determination happens at run time. On the other hand, in static polymorphism determination of method happens at compile time. Below is an example of static polymorphism.
+
+```csharp
+class SimpleCalculator
+{
+    int add(int a, int b)
+    {
+        return a + b;
+    }
+    int add(int a, int b, int c)
+    {
+        return a + b + c;
+    }
+}
+
+public class Program
+{
+    public static void main(String args[])
+    {
+        SimpleCalculator obj = new SimpleCalculator();
+        System.out.println(obj.add(20, 30));
+        System.out.println(obj.add(20, 30, 40));
+    }
+}
+ ```
+
 Check out [Wikipedia](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming) "Encapsulation (Computer Programming)") for more. [Click here](https://www.nahidsaikat.com/tag/oop/ "Nahid Saikat") for other OOP posts.
