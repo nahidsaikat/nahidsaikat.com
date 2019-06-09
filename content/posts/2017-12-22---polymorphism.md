@@ -12,8 +12,8 @@ tags:
 description: "Polymorphism is one of the most important concepts of object oriented programming. It comes from two Greek words, Poly and Morph. Poly means Many and Morph means Form."
 ---
 
-![Encapsulation](/media/pixabay/encapsulation.jpg "Encapsulation")
-[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/tablets-drug-encapsulate-medical-4028232/)
+![Polymorphism](/media/pixabay/polimorphism.jpg "Polymorphism")
+[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/morpho-peleides-butterfly-54776/)
 
 Polymorphism is one of the most important concepts of object oriented programming. It comes from two Greek words, Poly and Morph. Poly means Many and Morph means Form. So polymorphism is the ability of functions or objects to take multiple forms based on the data or object. Suppose we have a Shape class which has a draw method that draws something. As Shape is a generic class so it does not draw a specific thing.
  
