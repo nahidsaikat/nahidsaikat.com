@@ -3,8 +3,11 @@ title: "INDEX"
 template: "page"
 ---
 
+## Software Engineering
+* [Layered Architecture](http://nahidsaikat.com/blog/2017/10/11/layered-architecture/ "Layered Architecture")
+
 ## Design Principle
-* [Brief Statement of SOLID Principles](http://nahidsaikat.com/blog/2017/07/26/solid-principles "Solid Principle")
+* [Brief Statement of SOLID Principles](http://nahidsaikat.com/blog/2017/07/26/solid-principles/ "Solid Principle")
 
 ## Object Oriented Programming
 * [Encapsulation (OOP)](http://nahidsaikat.com/blog/2017/12/30/encapsulation/ "Encapsulation")
