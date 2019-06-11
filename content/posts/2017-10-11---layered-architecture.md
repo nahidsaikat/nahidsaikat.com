@@ -10,8 +10,8 @@ tags:
 description: "The most common architectural pattern is the Layered Architectural pattern. It is the most widely used architectural pattern in today industry. This pattern is easy to implement and it has similarity with the organizational architecture."
 ---
 
-![Layered Architecture](/media/pixabay/inheritance.jpg "Layered Architecture")
-[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/illustrations/microbiology-dna-people-structure-163521/)
+![Layered Architecture](/media/pixabay/layered-architecture.jpg "Layered Architecture")
+[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/floor-wood-hardwood-floors-1256804/)
 
 **Description**
 
