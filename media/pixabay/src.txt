@@ -6,3 +6,4 @@ conditions.jpg               https://pixabay.com/photos/autumn-leaves-branch-bri
 polimorphism.jpg             https://pixabay.com/photos/morpho-peleides-butterfly-54776/
 layered-architecture.jpg     https://pixabay.com/photos/floor-wood-hardwood-floors-1256804/
 accounts-receivable.jpg      https://pixabay.com/photos/account-america-american-bank-3960036/
+bank-reconciliation.jpg      https://pixabay.com/photos/calculator-calculation-insurance-385506/
