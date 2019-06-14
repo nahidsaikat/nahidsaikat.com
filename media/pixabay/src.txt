@@ -5,3 +5,4 @@ case-statement.jpg           https://pixabay.com/photos/branch-sunset-nature-tre
 conditions.jpg               https://pixabay.com/photos/autumn-leaves-branch-bright-3846345/
 polimorphism.jpg             https://pixabay.com/photos/morpho-peleides-butterfly-54776/
 layered-architecture.jpg     https://pixabay.com/photos/floor-wood-hardwood-floors-1256804/
+accounts-receivable.jpg      https://pixabay.com/photos/account-america-american-bank-3960036/
