@@ -7,10 +7,10 @@ template: "page"
 * [Layered Architecture](http://nahidsaikat.com/blog/2017/10/11/layered-architecture/ "Layered Architecture")
 
 ### Design Principle
-* [Brief Statement of SOLID Principles](http://nahidsaikat.com/blog/2017/07/26/solid-principles/ "Solid Principle")
+* [Brief Statement of SOLID Principles](https://nahidsaikat.com/blog/2017/07/26/solid-principles/ "Solid Principle")
 
 ### Object Oriented Programming
-* [Encapsulation (OOP)](http://nahidsaikat.com/blog/2017/12/30/encapsulation/ "Encapsulation")
+* [Encapsulation (OOP)](https://nahidsaikat.com/blog/2017/12/30/encapsulation/ "Encapsulation")
 * [Inheritance (OOP)](https://nahidsaikat.com/blog/2017/11/12/inheritance/ "Inheritance")
 * [Polymorphism (OOP)](https://nahidsaikat.com/blog/2017/12/22/polymorphism/ "Polymorphism")
 
@@ -20,4 +20,5 @@ template: "page"
 * [Oracle PL/SQL Conditions](https://nahidsaikat.com/blog/2018/02/11/oracle-pl-sql-conditions/ "Oracle PL/SQL Conditions")
 
 ### Accounting
-* [Accounts Receivable](http://nahidsaikat.com/blog/2017/11/22/accounts-receivable/ "Accounts Receivable")
+* [Accounts Receivable](https://nahidsaikat.com/blog/2017/11/22/accounts-receivable/ "Accounts Receivable")
+* [Bank Reconciliation](https://nahidsaikat.com/blog/2018/01/21/bank-reconciliation/ "Bank Reconciliation")
