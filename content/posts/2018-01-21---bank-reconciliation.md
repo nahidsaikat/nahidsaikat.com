@@ -8,7 +8,7 @@ category: "Accounting"
 tags:
   - "Financial Accounting"
   - "Banking"
-description: ""
+description: "A company's cash account records all the transactions related to cash. Similarly Bank also records all the transactions of its account. The balance of these two account should be equal. But in most cases they don't match properly."
 ---
 
 ![Bank Reconciliation](/media/pixabay/bank-reconciliation.jpg "Bank Reconciliation")
