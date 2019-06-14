@@ -12,7 +12,7 @@ description: ""
 ---
 
 ![Bank Reconciliation](/media/pixabay/bank-reconciliation.jpg "Bank Reconciliation")
-[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/account-america-american-bank-3960036/)
+[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/calculator-calculation-insurance-385506/)
 
 ###What is Bank Reconciliation?
 A company's cash account records all the transactions related to cash. Similarly Bank also records all the transactions of its account. The balance of these two account should be equal. But in most cases they don't match properly. There are some transactions that appear in one but not in other which cause the main reason of mismatched amount. Typically bank sends a statement containing all transactions of its accounts to the company in every month. This statement contains the beginning balance of account, transaction during this month and the ending balance of the account. After getting the statement from bank company should match the transaction with the book account to be consistent. The process of matching bank statement with the company's book account is called bank reconciliation.
