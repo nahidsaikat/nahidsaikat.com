@@ -15,48 +15,89 @@ Receivable is a due from any individual or company to other individual or compan
 **Example:**  
 Suppose Karim Groups Limited sell some merchandising products to X & Z Limited for \$10000, terms 2/10, n/30 (if paid within 10 days gets 2% discount, but must pay full amount within 30 days) on 1st April, 2017. X & Z Limited returns some products to Karim Groups which is worth of \$1000 on 3rd April. On 10th April X & Z Limited pays it’s due to Karim Groups Limited. The transactions will be as follows
 
-Date
-Accounts
-Debit
-Credit
-01 April, 2017
-Accounts Receivable – X & Z Limited
-10,000
+<div class="table-responsive">
+<table class="table table-bordered table-hover">
+  <thead class="thead-dark">
+  <tr>
+    <th>Date</th>
+    <th>Accounts</th>
+    <th>Debit</th>
+    <th>Credit</th>
+  </tr>
+  </thead>
+  <tr>
+   <td>01 April, 2017</td>
+   <td>Accounts Receivable – X & Z Limited</td>
+   <td>$10,000</td>
+   <td></td>
+  </tr>
+  <tr>
+   <td>01 April, 2017</td>
+   <td>Sales Revenue</td>
+   <td></td>
+   <td>$10,000</td>
+  </tr>
+</table>
+</div>
+</br>
 
+<div class="table-responsive">
+<table class="table table-bordered table-hover">
+  <thead class="thead-dark">
+  <tr>
+    <th>Date</th>
+    <th>Accounts</th>
+    <th>Debit</th>
+    <th>Credit</th>
+  </tr>
+  </thead>
+  <tr>
+   <td>03 April, 2017</td>
+   <td>Sales Return & Allowance</td>
+   <td>$1,000</td>
+   <td></td>
+  </tr>
+  <tr>
+   <td>03 April, 2017</td>
+   <td>Accounts Receivable – X & Z Limited</td>
+   <td></td>
+   <td>$1,000</td>
+  </tr>
+</table>
+</div>
+</br>
 
-Sales Revenue
-
-10,000
-
-Date
-Accounts
-Debit
-Credit
-03 April, 2017
-Sales Return & Allowance
-1,000
-
-
-Accounts Receivable – X & Z Limited
-
-1,000
-
-Date
-Accounts
-Debit
-Credit
-10 April, 2017
-Cash
-8,820
-
-10 April, 2017
-Discount
-120
-
-
-Accounts Receivable – X & Z Limited
-
-9,000
+<div class="table-responsive">
+<table class="table table-bordered table-hover">
+  <thead class="thead-dark">
+  <tr>
+    <th>Date</th>
+    <th>Accounts</th>
+    <th>Debit</th>
+    <th>Credit</th>
+  </tr>
+  </thead>
+  <tr>
+    <td>10 April, 2017</td>
+    <td>Cash</td>
+    <td>$8,820</td>
+    <td></td>
+  </tr>
+  <tr>
+   <td>10 April, 2017</td>
+   <td>Discount</td>
+   <td>$120</td>
+   <td></td>
+  </tr>
+  <tr>
+   <td>10 April, 2017</td>
+   <td>Accounts Receivable – X & Z Limited</td>
+   <td></td>
+   <td>$9,000</td>
+  </tr>
+</table>
+</div>
+</br>
 
 Accounts Receivable account is one of the important accounts for any business. Accounts Receivable is posted to balance sheet as a current asset. But determining the amount is very tough, because there is always have some receivable that will not be collected. Normally this is considered as Bad Debt Expense. There are two method to determine the bad debt expense.
 
@@ -65,35 +106,61 @@ Accounts Receivable account is one of the important accounts for any business. A
 
 In **direct write-off method** bad debt expenses are written to accounts when it actually happens. Suppose, Zaman Steels Limited have accounts receivable amount of \$5,000 to AB Aluminium Limited. But AB Aluminium Limited is in great lose due to natural disaster at their factory. So it is known that AB Aluminium Limited is unable to pay \$5,000. So it will become bad debt. It will be written in direct write-off method as follow.
 
-Date
-Accounts
-Debit
-Credit
-15 May, 2017
-Bad Debt Expense
-5,000
-
-
-Accounts Receivable – X & Z Limited
-
-5,000
+<div class="table-responsive">
+<table class="table table-bordered table-hover">
+  <thead class="thead-dark">
+  <tr>
+    <th>Date</th>
+    <th>Accounts</th>
+    <th>Debit</th>
+    <th>Credit</th>
+  </tr>
+  </thead>
+  <tr>
+   <td>15 May, 2017</td>
+   <td>Bad Debt Expense</td>
+   <td>$5,000</td>
+   <td></td>
+  </tr>
+  <tr>
+   <td>15 May, 2017</td>
+   <td>Accounts Receivable – X & Z Limited</td>
+   <td></td>
+   <td>$5,000</td>
+  </tr>
+</table>
+</div>
+</br>
 
 Although direct write-off method is easy to maintain it has some serious problem. In this method bad debt may be written in different year other than the year when sales is generated. Suppose MM Electronics sales \$20,00,000 on year 2015 on credits. In financial year of 2015 it will show \$20,00,000 as sales revenue and \$20,00,000 as accounts receivable. But this credit will be collected on 2016. If 50% of credit become bad debt then in 2016’s balance sheet it will show \$10,00,000 as bad debt expense. But this bad debt is generated in 2015, so it should be in 2015’s balance sheet.
 
 As bad debt is normal case in business it could be estimated before it actually happens from previous experience. Generally company’s estimate it and allow some percentage of sale as bed debt in their accounting system. This method of estimating bad debt is called **allowance method**. Suppose Advance IT Limited allows 10% of its sale as bad debt and its total sale is \$10,00,000, the following journal entry will be held,
 
-Date
-Accounts
-Debit
-Credit
-5 July, 2017
-Bad Debt Expense
-10,000
-
-
-Allowance for Bad Debt
-
-10,000
+<div class="table-responsive">
+<table class="table table-bordered table-hover">
+  <thead class="thead-dark">
+  <tr>
+    <th>Date</th>
+    <th>Accounts</th>
+    <th>Debit</th>
+    <th>Credit</th>
+  </tr>
+  </thead>
+  <tr>
+   <td>5 July, 2017</td>
+   <td>Bad Debt Expense</td>
+   <td>$10,000</td>
+   <td></td>
+  </tr>
+  <tr>
+   <td>5 July, 2017</td>
+   <td>Allowance for Bad Debt</td>
+   <td></td>
+   <td>$10,000</td>
+  </tr>
+</table>
+</div>
+</br>
 
 When actual bad debt occurs allowance for bad debt account and accounts receivable account will be adjusted.
 
@@ -101,31 +168,57 @@ Allowance for bad debt account will behave as contra account in balance sheet to
 
 Sometimes company get paid be customers that they considered as bad debt. In this case two journal entry is needed. Suppose Rahman Traders Limited gets paid be \$10,000 that they considered as bad debt. Then they needs to do following journal entry in their accounting system,
 
-Date
-Accounts
-Debit
-Credit
-13 July, 2017
-Accounts Receivable
-10,000
+<div class="table-responsive">
+<table class="table table-bordered table-hover">
+  <thead class="thead-dark">
+  <tr>
+    <th>Date</th>
+    <th>Accounts</th>
+    <th>Debit</th>
+    <th>Credit</th>
+  </tr>
+  </thead>
+  <tr>
+   <td>13 July, 2017</td>
+   <td>Accounts Receivable</td>
+   <td>$10,000</td>
+   <td></td>
+  </tr>
+  <tr>
+   <td>13 July, 2017</td>
+   <td>Allowance for Bad Debt</td>
+   <td></td>
+   <td>$10,000</td>
+  </tr>
+</table>
+</div>
+</br>
 
-
-Allowance for Bad Debt
-
-10,000
-
-Date
-Accounts
-Debit
-Credit
-13 July, 2017
-Cash
-10,000
-
-
-Accounts Receivable
-
-10,000
+<div class="table-responsive">
+<table class="table table-bordered table-hover">
+  <thead class="thead-dark">
+  <tr>
+    <th>Date</th>
+    <th>Accounts</th>
+    <th>Debit</th>
+    <th>Credit</th>
+  </tr>
+  </thead>
+  <tr>
+   <td>13 July, 2017</td>
+   <td>Cash</td>
+   <td>$10,000</td>
+   <td></td>
+  </tr>
+  <tr>
+   <td>13 July, 2017</td>
+   <td>Accounts Receivable</td>
+   <td></td>
+   <td>$10,000</td>
+  </tr>
+</table>
+</div>
+</br>
 
 There are two methods to estimate the allowance for bad debt.
 
@@ -144,4 +237,4 @@ There are two main reason for which company wants to sale their receivable,
 2. It is costly to collect money from customers.
 
 Check out other accounting related post from
-[here](https://www.nahidsaikat.com/blog/category/accounting/ "Accounting Post").
+[here](https://www.nahidsaikat.com/category/accounting/ "Accounting Post").
