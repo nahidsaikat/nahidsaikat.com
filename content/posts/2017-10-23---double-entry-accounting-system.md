@@ -27,29 +27,53 @@ It is mandatory that every transaction should have at least two entries. Though 
 
 To illustrates this more clearly recall the above example. On a single entry account system the transaction will be written as follow,
 
-Date
-Description
-Revenues
-Expenses
-10 August, 2017
-Purchase of raw materials.
-
-1,000
+<div class="table-responsive">
+<table class="table table-bordered table-hover">
+  <thead class="thead-dark">
+  <tr>
+    <th>Date</th>
+    <th>Description</th>
+    <th>Revenues</th>
+    <th>Expenses</th>
+  </tr>
+  </thead>
+  <tr>
+   <td>10 August, 2017</td>
+   <td>Purchase of raw materials.</td>
+   <td></td>
+   <td class="text-right">$1,000</td>
+  </tr>
+</table>
+</div>
+</br>
 
 But on a double entry accounting system the transaction will be recorded as follow,
 
-Date
-Accounts
-Debit
-Credit
-10 August, 2017
-Inventory
-1,000
-
-
-Cash
-
-1,000
+<div class="table-responsive">
+<table class="table table-bordered table-hover">
+  <thead class="thead-dark">
+  <tr>
+    <th>Date</th>
+    <th>Accounts</th>
+    <th class="text-center">Debit</th>
+    <th class="text-center">Credit</th>
+  </tr>
+  </thead>
+  <tr>
+   <td>10 August, 2017</td>
+   <td>Inventory</td>
+   <td class="text-right">$1,000</td>
+   <td></td>
+  </tr>
+  <tr>
+   <td>10 August, 2017</td>
+   <td>Cash</td>
+   <td></td>
+   <td class="text-right">$1,000</td>
+  </tr>
+</table>
+</div>
+</br>
 
 A notation should be taken to indicate that this transaction is for purchasing of raw materials for the business.
 Traditionally the two effect of the transaction is termed as debit and credit. For every debit there will always be one and opposite credit with equal amount. That is the duality principle of accounting. Debit entry have the following effects,
