@@ -12,7 +12,7 @@ description: "Double entry accounting system is the scientific method of recordi
 ---
 
 ![Double Entry Accounting System](/media/pixabay/double-entry-accounting-system.jpg "Double Entry Accounting System")
-[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/calculator-calculation-insurance-385506/)
+[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/ledger-accounting-business-money-1428230/)
 
 #### Double Entry Accounting System
 Double entry accounting system is the scientific method of recording business transactions. It has been first  documented by Luca Pacioli in 1494 on his book entitled  "Summa de arithmetica, geometria, proportioni et proportionalita". From then it has been widely accepted as the most scientific accounting system. Before this system single entry accounting system was being used which is not a scientific method and has lots of disadvantages compared to double entry accounting system.
