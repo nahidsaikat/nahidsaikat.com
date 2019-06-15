@@ -9,3 +9,4 @@ accounts-receivable.jpg      https://pixabay.com/photos/account-america-american
 bank-reconciliation.jpg      https://pixabay.com/photos/calculator-calculation-insurance-385506/
 single-entry-accounting-system.jpg	https://pixabay.com/photos/paper-business-finance-currency-3150428/
 double-entry-accounting-sysetm.jpg  https://pixabay.com/photos/ledger-accounting-business-money-1428230/
+gst-advance-receive.jpg      https://pixabay.com/illustrations/invoice-cash-payments-concept-3739354/
