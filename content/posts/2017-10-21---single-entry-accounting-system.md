@@ -29,56 +29,69 @@ In a single entry bookkeeping system transactions are recorded in cashbook. For 
 
 The first entry of a single entry bookkeeping is the balance of the accounting period. Then all the transactions are recorded in each row. Last line of the cashbook is the closing balance of the accounting period. A typical cashbook of any business is below.
 
-#
-Date
-Description
-Incomes
-Expenses
-Balances
-1
-01-Apr
-Beginning Balance
-
-
-
-
-1000
-2
-05-Apr
-Purchase shop supplies
-
-
-200
-800
-3
-10-Apr
-Sale: Mr. Kamal
-100
-
-
-900
-4
-15-Apr
-Sale: Mr. Kamrul
-150
-
-
-1050
-5
-20-Apr
-Salary Paid
-
-
-200
-850
-6
-30-Apr
-Closing Balance
-
-
-
-
-850
+<div class="table-responsive">
+<table class="table  table-hover">
+  <thead class="thead-light">
+  <tr>
+    <th>#</th>
+    <th>Date</th>
+    <th>Description</th>
+    <th>Income</th>
+    <th>Expense</th>
+    <th>Balance</th>
+  </tr>
+  </thead>
+  <tr>
+   <td>1</td>
+   <td>01-Apr</td>
+   <td>Beginning Balance</td>
+   <td></td>
+   <td></td>
+   <td class="text-right">$1000</td>
+  </tr>
+  <tr>
+   <td>2</td>
+   <td>05-Apr</td>
+   <td>Purchase shop supplies</td>
+   <td></td>
+   <td class="text-right">$200</td>
+   <td class="text-right">$800</td>
+  </tr>
+  <tr>
+   <td>3</td>
+   <td>10-Apr</td>
+   <td>Sale: Mr. Kamal</td>
+   <td class="text-right">$100</td>
+   <td></td>
+   <td class="text-right">$900</td>
+  </tr>
+  <tr>
+   <td>4</td>
+   <td>15-Apr</td>
+   <td>Sale: Mr. Kamrul</td>
+   <td class="text-right">$150</td>
+   <td></td>
+   <td class="text-right">$1050</td>
+  </tr>
+  <tr>
+   <td>5</td>
+   <td>20-Apr</td>
+   <td>Salary Paid</td>
+   <td></td>
+   <td class="text-right">$200</td>
+   <td class="text-right">$850</td>
+  </tr>
+  <tr>
+   <td>6</td>
+   <td>30-Apr</td>
+   <td>Closing Balance</td>
+   <td></td>
+   <td></td>
+   <td class="text-right">$850</td>
+  </tr>
+</table>
+</div>
+</br>
 
 #### Advantages
 * Single entry bookkeeping system is very simple and easy to maintain.
