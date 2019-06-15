@@ -1,5 +1,5 @@
 ---
-title: "GST - Advanced Receive"
+title: "GST - Advance Receive"
 date: "2017-09-03T22:12:03.284Z"
 template: "post"
 draft: false
@@ -11,8 +11,8 @@ tags:
 description: "Taking advance against an order is a common scenario in business. Usually suppliers take advance from customers to ensure that the order will not be cancelled. Before GST there was no effect of advance on tax."
 ---
 
-![GST - Advanced Receive](/media/pixabay/gst-advance-receive.jpg "GST - Advanced Receive")
-[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/account-america-american-bank-3960036/)
+![GST - Advance Receive](/media/pixabay/gst-advance-receive.jpg "GST - Advance Receive")
+[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/illustrations/invoice-cash-payments-concept-3739354/)
 
 Taking advance against an order is a common scenario in business. Usually suppliers take advance from customers to ensure that the order will not be cancelled. Before GST there was no effect of advance on tax. Tax was taken when goods are supplied to customers. However services suppliers needs to pay tax on advance. But under GST tax should be paid on advance for both services and goods. Tax rate will be applicable of the goods and/or services on which the advanced is being received. Based on the place of goods and/or services receiver, CGST + SGST (Intra-state) or IGST (Inter-state) will be applicable.
 
