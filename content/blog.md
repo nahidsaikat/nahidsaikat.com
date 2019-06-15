@@ -19,8 +19,12 @@ template: "page"
 * [Oracle PL/SQL Conditions](https://nahidsaikat.com/blog/2018/02/11/oracle-pl-sql-conditions/ "Oracle PL/SQL Conditions")
 * [Oracle PL/SQL Case Statement](https://nahidsaikat.com/blog/2018/02/28/oracle-pl-sql-case-statement/ "Oracle PL/SQL Case Statement")
 
-### Accounting
+### Accounting &nbsp;<br/>
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Financial Accounting
 * [Single Entry Accounting System](https://nahidsaikat.com/blog/2017/10/21/single-entry-accounting-system/ "Single Entry Accounting System")
 * [Double Entry Accounting System](https://nahidsaikat.com/blog/2017/10/23/double-entry-accounting-system/ "Double Entry Accounting System")
 * [Accounts Receivable](https://nahidsaikat.com/blog/2017/11/22/accounts-receivable/ "Accounts Receivable")
 * [Bank Reconciliation](https://nahidsaikat.com/blog/2018/01/21/bank-reconciliation/ "Bank Reconciliation")
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indian GST
+* [GST - Advance Receive](https://nahidsaikat.com/blog/2017/09/03/gst-advanced-receive/ "GST - Advance Receive")
