@@ -7,3 +7,5 @@ polimorphism.jpg             https://pixabay.com/photos/morpho-peleides-butterfl
 layered-architecture.jpg     https://pixabay.com/photos/floor-wood-hardwood-floors-1256804/
 accounts-receivable.jpg      https://pixabay.com/photos/account-america-american-bank-3960036/
 bank-reconciliation.jpg      https://pixabay.com/photos/calculator-calculation-insurance-385506/
+single-entry-accounting-system.jpg	https://pixabay.com/photos/paper-business-finance-currency-3150428/
+double-entry-accounting-sysetm.jpg  https://pixabay.com/photos/ledger-accounting-business-money-1428230/
