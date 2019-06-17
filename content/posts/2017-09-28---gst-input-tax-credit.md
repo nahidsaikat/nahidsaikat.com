@@ -12,7 +12,7 @@ description: "There are two types of transactions happen in any business, inward
 ---
 
 ![GST - Input Tax Credit](/media/pixabay/gst-input-tax-credit.jpg "GST - Input Tax Credit")
-[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/illustrations/invoice-cash-payments-concept-3739354/)
+[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/illustrations/tax-taxes-taxation-accountant-1040-957457/)
 
 From 1st July, 2017 GST is applied on all the goods and services in all over the India. There are five different rates of GST - 0%, 5%, 12%, 18% and 28% - which are applied on goods and services. Previously different states applies different rates of tax on goods and services for manufacturing and other business. In GST all the taxes are combined in one tax system. Input tax credit is one of the important concept in GST and it is also the most confusing topic of GST. In this blog article we will understand input tax credit mechanism in GST.
 <br/><br/>
