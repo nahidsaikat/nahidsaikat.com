@@ -8,7 +8,7 @@ category: "Accounting"
 tags:
   - "Financial Accounting"
   - "Indian GST"
-description: ""
+description: "There are two types of transactions happen in any business, inward supply and outward supply. Business procure raw materials, semi-finished or finished goods which is inward supply and after making the product they sale it, which is outward supply."
 ---
 
 ![GST - Input Tax Credit](/media/pixabay/gst-input-tax-credit.jpg "GST - Input Tax Credit")
