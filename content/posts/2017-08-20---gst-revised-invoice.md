@@ -12,7 +12,7 @@ description: ""
 ---
 
 ![GST - Revised Tax Invoice](/media/pixabay/gst-revised-invoice.jpg "GST - Revised Tax Invoice")
-[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/copy-space-text-box-cardboard-pack-2535266/)
+[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/eraser-abrasion-stationery-office-3822402/)
 
 If you are a businessman and your business is in India and if your annual turnover is Rs. 20 lakh or more then surely you will have to be registered under GSTN (Goods & Services Tax Network) to obtain your GSTIN. We all known that from 1st July, 2017 India started the implementation of GST all over the country. But it may happen that you have been applied for your GSTIN but you didn't get it within 1st July, 2017. Thus the transactions you have made between the effective date of GST and date of issue of GSTIN are done in previous tax rate. At this point you can issue a revised invoice of this transactions to apply the GST rates in them. To be more clear, you will revise the invoices you made between the following dates:
 
