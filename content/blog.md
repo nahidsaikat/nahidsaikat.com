@@ -30,5 +30,6 @@ template: "page"
 * [GST - Input Tax Credit](https://nahidsaikat.com/blog/2017/09/28/gst-input-tax-credit/ "GST - Input Tax Credit")
 * [GST - Advance Receive](https://nahidsaikat.com/blog/2017/09/03/gst-advanced-receive/ "GST - Advance Receive")
 * [GST - Revised Tax Invoice](https://nahidsaikat.com/blog/2017/08/20/gst-revised-invoice/ "GST - Revised Tax Invoice")
-* [GST - Job Work Process](https://nahidsaikat.com/blog/2017/08/26/gst-job-work-process/ "GST - Job Work Process")
+* [GST – Reverse Charge Mechanism](https://nahidsaikat.com/blog/2017/08/11/gst-reverse-charge-mechanism/ "GST – Reverse Charge Mechanism")
 * [GST - Refund Voucher](https://nahidsaikat.com/blog/2017/09/16/gst-refund-voucher/ "GST - Refund Voucher")
+* [GST - Job Work Process](https://nahidsaikat.com/blog/2017/08/26/gst-job-work-process/ "GST - Job Work Process")
