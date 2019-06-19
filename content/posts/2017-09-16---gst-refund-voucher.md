@@ -12,13 +12,13 @@ description: ""
 ---
 
 ![GST - Refund Voucher](/media/pixabay/gst-refund-voucher.jpg "GST - Refund Voucher")
-[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/book-robot-cube-simulation-3022615/)
+[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/copy-space-text-box-cardboard-pack-2535266/)
 
 Generally manufacturers demand advance to delivery a bulk of products. Service providers also asks for an advance payment for completion of a service. When a manufacturer gets paid of an advance amount for an order then at that moment he/she needs to issue a receipt voucher against that advance. But in future if that order gets cancelled then the manufacturer will issue a refund voucher to the person who paid the advance.
 
 Same case will play for the service providers also. A service provider requires to issue a receipt voucher when he/she gets paid of an advance amount for a service, and also needs to issue a refund voucher if the service order gets cancelled in future.
 
-###### Example:
+##### Example:
 1. Ganga Electronics Ltd. gets an order to supply 50 laptop computer (each laptop is for RS. 40,000) from Summer Info Technologies for their new office. Ganga Electronics Ltd. gets a payment of RS. 5,00,000 in advance. Thus Ganga Electronics Ltd. will issue a receipt voucher to Summer Info Technologies. But after some days Summer Info Technologies cancelled the order for their internal complexities. Now Ganga Electronics Ltd. needs to issue a refund voucher against the cancellation of the order.
 
 2. Harsa Travel Agency gets an order to transport some goods from Mumbai to New Delhi from a company called Rainbow Industries Ltd. The agency gets an advance payment of RS. 30,000. But due to some political violations in New Delhi Rainbow Industries Ltd. has cancelled the order. Now Harsa Travel Agency should issue a receipt voucher at the time of advance payment and a refund voucher at the time of cancellation.
