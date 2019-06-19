@@ -11,8 +11,8 @@ tags:
 description: "Job work process is one of the common activities in manufacturing industries. There are several processes like initial process, intermediate process, assembly, packing, final process etc. are being carried out by a manufacturer."
 ---
 
-![GST - Job Work Process](/media/pixabay/gst-input-tax-credit.jpg "GST - Job Work Process")
-[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/illustrations/tax-taxes-taxation-accountant-1040-957457/)
+![GST - Job Work Process](/media/pixabay/gst-job-work-process.jpg "GST - Job Work Process")
+[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/book-robot-cube-simulation-3022615/)
 
 Job work process is one of the common activities in manufacturing industries. There are several processes like initial process, intermediate process, assembly, packing, final process etc. are being carried out by a manufacturer. There could be a situation when a process carried out by a manufacturer is very costly. That time it could be cost effective to let the process being carried out by another person. In general sense this is named as job work process.
 
