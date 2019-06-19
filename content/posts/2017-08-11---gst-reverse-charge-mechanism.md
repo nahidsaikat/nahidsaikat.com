@@ -8,11 +8,11 @@ category: "Accounting"
 tags:
   - "Financial Accounting"
   - "Indian GST"
-description: ""
+description: "We all know that India has adapted with new tax system called GST (Goods & Services Tax) from 1st July, 2017. This is a consolidated tax system where Indian Government combine many of their Central and State tax on products and services."
 ---
 
 ![GST – Reverse Charge Mechanism](/media/pixabay/gst-reverse-charge-mechanism.jpg "GST – Reverse Charge Mechanism")
-[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/eraser-abrasion-stationery-office-3822402/)
+[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/vectors/arrow-left-button-pointing-symbol-24818/)
 
 We all know that India has adapted with new tax system called GST (Goods & Services Tax) from 1st July, 2017. This is a consolidated tax system where Indian Government combine many of their Central and State tax on products and services. India has accepted this new tax system because it has many advantages. It will cause the product/service prices to reduce. Thus Indian consumer will be benefited. Not only that India will be more competitive in International market for cost reduction nature of the new system. One question comes in mind how GST will reduce products/services cost? Well, before GST there are many tax on products/services that had been levied by State as well as Central Government. And also there was not any credit mechanism of already paid tax. Thus it may happen that one product/service has been levied for more than once by State or Center. So it increase the cost. In GST, business entities can take the credit of tax they have already paid. So product/service prices are remaining low.
 
