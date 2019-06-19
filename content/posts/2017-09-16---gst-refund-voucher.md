@@ -8,7 +8,7 @@ category: "Accounting"
 tags:
   - "Financial Accounting"
   - "Indian GST"
-description: ""
+description: "Generally manufacturers demand advance to delivery a bulk of products. Service providers also asks for an advance payment for completion of a service."
 ---
 
 ![GST - Refund Voucher](/media/pixabay/gst-refund-voucher.jpg "GST - Refund Voucher")
