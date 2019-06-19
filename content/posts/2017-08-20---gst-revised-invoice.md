@@ -8,7 +8,7 @@ category: "Accounting"
 tags:
   - "Financial Accounting"
   - "Indian GST"
-description: ""
+description: "If you are a businessman and your business is in India and if your annual turnover is Rs. 20 lakh or more then surely you will have to be registered under GSTN (Goods & Services Tax Network) to obtain your GSTIN."
 ---
 
 ![GST - Revised Tax Invoice](/media/pixabay/gst-revised-invoice.jpg "GST - Revised Tax Invoice")
