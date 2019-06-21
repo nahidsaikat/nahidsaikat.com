@@ -12,7 +12,7 @@ description: ""
 ---
 
 ![Service List for VAT Deduction at Source](/media/pixabay/services-vat-deduction-at-source-2017.jpg "Service List for VAT Deduction at Source")
-[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/vectors/arrow-left-button-pointing-symbol-24818/)
+[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/checklist-check-district-ring-2470507/)
 
 
 
