@@ -15,3 +15,4 @@ gst-job-work-process.jpg     https://pixabay.com/photos/book-robot-cube-simulati
 gst-refund-voucher.jpg       https://pixabay.com/photos/copy-space-text-box-cardboard-pack-2535266/
 gst-revised-invoice.jpg      https://pixabay.com/photos/eraser-abrasion-stationery-office-3822402/
 gst-reverse-charge-mechanism.jpg  https://pixabay.com/vectors/arrow-left-button-pointing-symbol-24818/
+services-vat-deduction-at-source-2017.jpg   https://pixabay.com/photos/checklist-check-district-ring-2470507/
