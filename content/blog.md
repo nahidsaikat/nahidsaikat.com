@@ -25,6 +25,7 @@ template: "page"
 * [Double Entry Accounting System](https://nahidsaikat.com/blog/2017/10/23/double-entry-accounting-system/ "Double Entry Accounting System")
 * [Accounts Receivable](https://nahidsaikat.com/blog/2017/11/22/accounts-receivable/ "Accounts Receivable")
 * [Bank Reconciliation](https://nahidsaikat.com/blog/2018/01/21/bank-reconciliation/ "Bank Reconciliation")
+* [Service List for VAT Deduction at Source](https://nahidsaikat.com/blog/2017/12/11/service-list-vat-deduction-source/ "Service List for VAT Deduction at Source")
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indian GST
 * [GST - Input Tax Credit](https://nahidsaikat.com/blog/2017/09/28/gst-input-tax-credit/ "GST - Input Tax Credit")
