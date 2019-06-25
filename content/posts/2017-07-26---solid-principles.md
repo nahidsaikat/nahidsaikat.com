@@ -11,6 +11,9 @@ tags:
 description: "SOLID principle is one of the most well known principle in software community. It is intendent to make software designs more understandable, flexible and maintainable."
 ---
 
+![Brief Statement of SOLID Principles](/media/pixabay/solid-principle.jpg "Brief Statement of SOLID Principles")
+[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/brick-stone-blocks-1397278/)
+
 ## S – Single Responsibility Principle
 A class or module should have one and only one reason to change.
 ## O – Open Closed Principle
