@@ -3,6 +3,9 @@ title: "INDEX"
 template: "page"
 ---
 
+### Python
+* Magic of Python: Python Descriptors
+
 ### Software Engineering
 * [Layered Architecture](https://nahidsaikat.com/blog/2017/10/11/layered-architecture/ "Layered Architecture")
 
