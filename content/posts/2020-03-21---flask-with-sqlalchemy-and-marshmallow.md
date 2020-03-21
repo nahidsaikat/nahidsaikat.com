@@ -15,13 +15,13 @@ description: "Oracle PL/SQL provides case statement control which is used in dec
 [<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/branch-sunset-nature-tree-sunlight-1753745/)
 
 
-In the article we will build a simple REST API using <strong>Flask</strong>, <strong>SQLAlchemy</strong> and <strong>Marshmallow</strong>. We will build a note taking app where these two API endpoint ```/note``` and ```/note/<id>``` will be available. 
+In the article we will build a simple REST API using <strong>Flask</strong>, <strong>SQLAlchemy</strong> and <strong>Marshmallow</strong>. We will be building a note taking application where these two API endpoints ```/note/``` and ```/note/<id>/``` will be available. 
 
-We will be able to create a new note or get all the notes list by doing a <strong>POST</strong> or a <strong>GET</strong> request to ```/note```. Not only that we will be able to get the details of a note by a <strong>GET</strong> request and delete the note by a <strong>DELETE</strong> request to ```/note/<id>```.
+We will be able to create new note or get all the notes by doing a <strong>POST</strong> or a <strong>GET</strong> request to ```/note/``` api endpoint. Not only that we will be able to get the details of the note or update the note or delete the note with a <strong>GET</strong> or a  <strong>PATCH</strong> or a <strong>DELETE</strong> request to ```/note/<id>/``` api endpoint.
 
-First we will give a brief description of the tools we will be using here.
+First of all, we will give a brief descriptions of the libraries that we will be using in this article.
 
-<strong>[Flask](https://palletsprojects.com/p/flask/ "Flask")</strong> is a lightweight WSGI web application framework in Python. It is designed to make getting started quick and easy.
+<strong>[Flask](https://palletsprojects.com/p/flask/ "Flask")</strong> is a lightweight WSGI web application framework in Python. It is designed to make getting started very quickly and very easily.
 
 <strong>[marshmallow](https://marshmallow.readthedocs.io/en/stable/ "marshmallow")</strong> is an ORM/ODM/framework-agnostic library for converting complex datatypes, such as objects, to and from native Python datatypes.
 
@@ -34,7 +34,9 @@ First we will give a brief description of the tools we will be using here.
 
 <strong>[marshmallow-sqlalchemy](https://marshmallow-sqlalchemy.readthedocs.io/en/latest/index.html "marshmallow-sqlalchemy")</strong> An SQLAlchemy integration with the marshmallow (de)serialization library.
 
-We will be using pipenv as our dependency manager. We are asuming that pipenv is installed in your system. Follow the steps bellow and at the end you will have a crud application running on http://localhost:5000/.
+We will be using pipenv as our dependency manager. We are asuming that pipenv is already installed in your system. 
+
+Follow the steps bellow and at the end you will have a simple note application running on http://localhost:5000/.
 
 <strong>Step 1: Setup Project Environment</strong>
 
@@ -51,6 +53,8 @@ pipenv install flask-marshmallow
 pipenv install flask-sqlalchemy
 pipenv install marshmallow-sqlalchemy
 ```
+After running those commands marshmallow and SQLAlchemy will be install internally as a dependency.
+
 <strong>Step 3: Create ```app.py``` file</strong>
 
 ```cmd
@@ -84,7 +88,7 @@ python app.py
 ```
 <strong>Step 7: Go to the Browser</strong>
 
-Start your favurite browser and go to the url http://localhost:5000/. You will see ```Hello, World!``` printed.
+Start your favurite browser and go to the http://localhost:5000/ url and you will see ```Hello, World!``` printed.
 
 <strong>Step 8: Integrate SQLAlchemy & Marshmallow</strong>
 
