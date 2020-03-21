@@ -5,7 +5,7 @@ template: "page"
 
 ### Python
 * Magic of Python: Python Descriptors
-* [Step by Step Flask REST API with Marshmallow and SqlAlchemy](https://nahidsaikat.com/blog/building-flask-rest-api-with-marshmallow-and-sqlalchemy/ "Step by Step Flask REST API with Marshmallow and SqlAlchemy")
+* [Step by Step Flask REST API with Marshmallow and SqlAlchemy](https://nahidsaikat.com/blog/flask-with-sqlalchemy-and-marshmallow/ "Step by Step Flask REST API with Marshmallow and SqlAlchemy")
 
 ### Software Engineering
 * [Layered Architecture](https://nahidsaikat.com/blog/2017/10/11/layered-architecture/ "Layered Architecture")
