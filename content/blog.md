@@ -5,6 +5,7 @@ template: "page"
 
 ### Python
 * Magic of Python: Python Descriptors
+* [Step by Step Flask REST API with Marshmallow and SqlAlchemy](https://nahidsaikat.com/blog/building-flask-rest-api-with-marshmallow-and-sqlalchemy/ "Step by Step Flask REST API with Marshmallow and SqlAlchemy")
 
 ### Software Engineering
 * [Layered Architecture](https://nahidsaikat.com/blog/2017/10/11/layered-architecture/ "Layered Architecture")
@@ -31,9 +32,9 @@ template: "page"
 * [Service List for VAT Deduction at Source](https://nahidsaikat.com/blog/2017/12/11/service-list-vat-deduction-source/ "Service List for VAT Deduction at Source")
 
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Indian GST
-* [GST - Input Tax Credit](https://nahidsaikat.com/blog/2017/09/28/gst-input-tax-credit/ "GST - Input Tax Credit")
-* [GST - Advance Receive](https://nahidsaikat.com/blog/2017/09/03/gst-advanced-receive/ "GST - Advance Receive")
-* [GST - Revised Tax Invoice](https://nahidsaikat.com/blog/2017/08/20/gst-revised-invoice/ "GST - Revised Tax Invoice")
+* [GST – Input Tax Credit](https://nahidsaikat.com/blog/2017/09/28/gst-input-tax-credit/ "GST - Input Tax Credit")
+* [GST – Advance Receive](https://nahidsaikat.com/blog/2017/09/03/gst-advanced-receive/ "GST - Advance Receive")
+* [GST – Revised Tax Invoice](https://nahidsaikat.com/blog/2017/08/20/gst-revised-invoice/ "GST - Revised Tax Invoice")
 * [GST – Reverse Charge Mechanism](https://nahidsaikat.com/blog/2017/08/11/gst-reverse-charge-mechanism/ "GST – Reverse Charge Mechanism")
-* [GST - Refund Voucher](https://nahidsaikat.com/blog/2017/09/16/gst-refund-voucher/ "GST - Refund Voucher")
-* [GST - Job Work Process](https://nahidsaikat.com/blog/2017/08/26/gst-job-work-process/ "GST - Job Work Process")
+* [GST – Refund Voucher](https://nahidsaikat.com/blog/2017/09/16/gst-refund-voucher/ "GST - Refund Voucher")
+* [GST – Job Work Process](https://nahidsaikat.com/blog/2017/08/26/gst-job-work-process/ "GST - Job Work Process")
