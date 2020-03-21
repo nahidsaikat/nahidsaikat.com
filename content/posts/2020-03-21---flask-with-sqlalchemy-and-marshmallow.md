@@ -8,11 +8,11 @@ category: "Python"
 tags:
   - "Flask"
   - "REST-API"
-description: "Oracle PL/SQL provides case statement control which is used in decision making. It has similarities with the IF statement control of PL/SQL. In case statement there is a selector, "
+description: "In the article we will build a simple REST API using Flask, SQLAlchemy and Marshmallow. We will be building a note taking application where these two API endpoints /note/ and /note/<id>/ will be available."
 ---
 
-![PL/SQL Case Statement](/media/pixabay/case-statement.jpg "PL/SQL Case Statement")
-[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/branch-sunset-nature-tree-sunlight-1753745/)
+![Flask with SQLAlchemy & Marshmallow](/media/pixabay/flask-marshmallow-sqlalchemy.jpg "Flask with SQLAlchemy & Marshmallow")
+[<center><span style="color:black">Image Source</span></center>](https://pixabay.com/photos/field-cereals-summer-sun-sunshine-192179/)
 
 
 In the article we will build a simple REST API using <strong>Flask</strong>, <strong>SQLAlchemy</strong> and <strong>Marshmallow</strong>. We will be building a note taking application where these two API endpoints ```/note/``` and ```/note/<id>/``` will be available. 
