@@ -200,7 +200,7 @@ Enter in python shell
 
 <strong>Step 13: Test APIs</strong>
 
-We can use the tool [Postman](https://www.postman.com/ "Postman") to test our APIs.
+We can use the tool [Postman](https://www.postman.com/ "Postman") to test our APIs. But before that please ensure your development server is up and running using this command ```python app.py``` from <strong>Step 6</strong>.
 
 ![Flask with SQLAlchemy & Marshmallow](/media/flask-with-sqlalchemy-and-marshmallow.png "Flask with SQLAlchemy & Marshmallow")
 
