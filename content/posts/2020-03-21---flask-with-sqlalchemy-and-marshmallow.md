@@ -34,7 +34,7 @@ First of all, we will give a brief descriptions of the libraries that we will be
 
 <strong>[marshmallow-sqlalchemy](https://marshmallow-sqlalchemy.readthedocs.io/en/latest/index.html "marshmallow-sqlalchemy")</strong> An SQLAlchemy integration with the marshmallow (de)serialization library.
 
-We will be using pipenv as our dependency manager. We are asuming that pipenv is already installed in your system. 
+We will be using <strong>pipenv</strong> as our dependency manager. We are assuming that pipenv is already installed in your system. 
 
 Follow the steps bellow and at the end you will have a simple note application running on http://localhost:5000/.
 
@@ -53,14 +53,14 @@ pipenv install flask-marshmallow
 pipenv install flask-sqlalchemy
 pipenv install marshmallow-sqlalchemy
 ```
-After running those commands marshmallow and SQLAlchemy will be install internally as a dependency.
+After running those commands marshmallow and SQLAlchemy will be installed internally as dependency.
 
-<strong>Step 3: Create ```app.py``` file</strong>
+<strong>Step 3: Create ```app.py``` File</strong>
 
 ```cmd
 touch app.py
 ```
-<strong>Step 4: Add Code to ```app.py``` file</strong>
+<strong>Step 4: Add This Code to ```app.py``` File</strong>
 
 ```python
 from flask import Flask
@@ -88,7 +88,7 @@ python app.py
 ```
 <strong>Step 7: Go to the Browser</strong>
 
-Start your favurite browser and go to the http://localhost:5000/ url and you will see ```Hello, World!``` printed.
+Start your favorite browser and go to the http://localhost:5000/ url and you will see ```Hello, World!``` printed.
 
 <strong>Step 8: Integrate SQLAlchemy & Marshmallow</strong>
 
