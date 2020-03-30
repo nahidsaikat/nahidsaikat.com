@@ -17,3 +17,5 @@ gst-revised-invoice.jpg      https://pixabay.com/photos/eraser-abrasion-statione
 gst-reverse-charge-mechanism.jpg  https://pixabay.com/vectors/arrow-left-button-pointing-symbol-24818/
 services-vat-deduction-at-source-2017.jpg   https://pixabay.com/photos/checklist-check-district-ring-2470507/
 solid-principle.jpg          https://pixabay.com/photos/brick-stone-blocks-1397278/
+flask-marshmallow-sqlalchemy.jpg	https://pixabay.com/photos/field-cereals-summer-sun-sunshine-192179/
+flask-structure-blueprint.jpg		https://pixabay.com/photos/prague-czech-republic-city-river-1168302/
