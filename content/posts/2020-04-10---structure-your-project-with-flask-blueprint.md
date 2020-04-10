@@ -16,9 +16,9 @@ description: "Blueprint is a way to organize related code in the same module. Bl
 
 Flask is a lightweight WSGI web application framework based on Python. It is designed in such a way that it will only supply the core components of a web application and it lets the developer choose rest of the things. It leaves all the design and architecture level decisions to the developer.
 
-As a retult it is very easy to get started start with Flask. But day by day when the application gets bigger and more complex, it become very tough to maintain the code base. To resolve this problem Flask comes with <strong>Blueprint</strong>. 
+As a result it is very easy to get started start with Flask. But day by day when the application gets bigger and more complex, it become very tough to maintain the code base. To resolve this problem Flask comes with <strong>Blueprint</strong>. 
 
-<strong>Flask Blueprint</strong> or <strong>Blueprint</strong> for short, is a way to organize the related codebase between python modules or packages. In this article we will learn how to use Blueprint to structure a Flask project.
+<strong>Flask Blueprint</strong> or <strong>Blueprint</strong> for short, is a way to organize the related code base between python modules or packages. In this article we will learn how to use Blueprint to structure a Flask project.
 
 At the beginning, lets first create a hello world application in Flask. Create a file ```app.py``` and put the following code in it.
 ```python
@@ -37,7 +37,7 @@ What we have done here is that, first we have created an Flask application objec
 
 Now open up your terminal and write this command ```python app.py``` and hit enter. It will run your application on port 5000 of your machine.
 
-While the application is running go to ```http://localhost:5000``` in your favorite browser and see that ```Hello, World!``` is printed on it.
+While the application is running, go to ```http://localhost:5000``` in your favorite browser and see that ```Hello, World!``` is printed on it.
 
 As your basic Flask application is up and running. Now create a new file ```views.py``` and write the following code in it.
 ```python
@@ -74,6 +74,7 @@ To check that open your terminal and run this command ```python app.py```, then 
 <br>
 
 ![Structure Your Project with Flask Blueprint](https://media.giphy.com/media/T0WzQ475t9Cw/source.gif "Structure Your Project with Flask Blueprint")
+[<center><span style="color:black">Source</span></center>](https://media.giphy.com/media/T0WzQ475t9Cw/source.gif)
 
 <br>
 
