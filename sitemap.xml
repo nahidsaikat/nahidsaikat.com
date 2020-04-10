@@ -6,8 +6,8 @@
 <url> <loc>https://www.nahidsaikat.com/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/pages/contacts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/2017/07/26/solid-principles</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.nahidsaikat.com/blog/2017/08/20/gst-revised-invoice/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/2017/08/11/gst-reverse-charge-mechanism/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.nahidsaikat.com/blog/2017/08/20/gst-revised-invoice/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/2017/08/26/gst-job-work-process/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/2017/09/03/gst-advanced-receive/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/2017/09/16/gst-refund-voucher/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -23,9 +23,9 @@
 <url> <loc>https://www.nahidsaikat.com/blog/2018/01/21/bank-reconciliation/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/2018/01/29/oracle-pl-sql-blocks/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/2018/02/11/oracle-pl-sql-conditions/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.nahidsaikat.com/blog/structure-your-project-with-flask-blueprint/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/2018/02/28/oracle-pl-sql-case-statement/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/flask-with-sqlalchemy-and-marshmallow/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.nahidsaikat.com/blog/structure-your-project-with-flask-blueprint/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/tag/accounting-system</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/tag/banking</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/tag/design-principle</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
