@@ -33,7 +33,7 @@ def hello_world():
 if __name__ == '__main__':
     app.run(debug=True)
 ```
-What we have done here is that, first we have created an Flask application object by passing the name of the application's module or package. Then we define a function ```hello_world``` and register it with ```'/'``` url endpoint using route decorator of the ```app``` object. 
+What we have done here is that, first we have created an Flask application object by passing the name of the application's module or package. Then we define a function ```hello_world``` and associates it with ```'/'``` url endpoint using route decorator of the ```app``` object. 
 
 Now open up your terminal and write this command ```python app.py``` and hit enter. It will run your application on port 5000 of your machine.
 
@@ -54,7 +54,7 @@ def index():
 Here we have done the following things.
 * We import ```Blueprint``` from ```flask```.
 * Created a Blueprint object and name it ```index_blueprint```.
-* And register our ```index``` function with ```/index/``` url endpoint using route decorator of ```index_blueprint```.
+* And associates our ```index``` function with ```/index/``` url endpoint using route decorator of ```index_blueprint```.
 
 While creating the ```index_blueprint``` object, first we have passed the name of the blueprint that will be used in Flask's routing mechanism. And then we have passed ```__name__``` as the second argument which will be used by Flask to locate the Blueprint's resources.
 
