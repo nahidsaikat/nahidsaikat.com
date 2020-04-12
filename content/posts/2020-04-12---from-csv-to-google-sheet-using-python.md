@@ -19,8 +19,6 @@ The JSON data and business rules of the script are very specific for my manager.
 
 In that Python script I have used a library called [gspread](https://gspread.readthedocs.io/en/latest/ "gspread"). gspread is a Python API for Google Sheets. It's a very good Python library for interacting with Google Sheet as it is very simple and straight forward.
 
-<!-- OK enough talk, lets dive deep into the way I have managed to upload a CSV file into Google Spread Sheet. -->
-
 For interacting with Google Sheet API first thing we have to do is create a project in [Google Developers Console](https://console.developers.google.com/ , "Google Developers Console") and enable some APIs. To do that just follow the steps below.
 
 1. Click on [this link](https://console.developers.google.com/cloud-resource-manager, "Google Developers Console") to create a project.
@@ -80,7 +78,7 @@ pip install gspread
 pip install oauth2client
 ```
 
-Now create a Python file and name it <strong>upload.py</strong>. Copy and paster the following code in it.
+Now create a Python file and name it <strong>upload.py</strong>. Copy and paste the following code in it.
 ```python
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
