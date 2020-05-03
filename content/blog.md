@@ -5,6 +5,10 @@ template: "page"
 
 ### Python
 * Magic of Python: Python Descriptors
+* Magic of Python: Python Decorator
+* Magic of Python: Python Iterator
+* Magic of Python: Python Generator
+* Magic of Python: Python Context Manager
 * [Flask with SQLAlchemy & Marshmallow](https://nahidsaikat.com/blog/flask-with-sqlalchemy-and-marshmallow/ "Flask with SQLAlchemy & Marshmallow")
 * [Structure Your Project with Flask Blueprint](https://nahidsaikat.com/blog/structure-your-project-with-flask-blueprint/ "Structure Your Project with Flask Blueprint")
 * [From CSV to Google Sheet Using Python](https://nahidsaikat.com/blog/from-csv-to-google-sheet-using-python/ "From CSV to Google Sheet Using Python")
