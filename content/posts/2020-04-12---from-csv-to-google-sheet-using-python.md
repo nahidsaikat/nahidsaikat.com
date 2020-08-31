@@ -102,6 +102,6 @@ Now run the Python script with this command ```python upload.py``` and open <str
 
 ![Create Google Project](/media/google_sheet/9_after_upload.jpg "Create Google Project")
 
-You can do more stuff with Google Sheet using gspread library. Checkout there [documentation](https://gspread.readthedocs.io/en/latest/ "gspread") to learn more.
+You can do more stuff with Google Sheet using gspread library. Checkout the [documentation](https://gspread.readthedocs.io/en/latest/ "gspread") to learn more.
 
 The complete code of this article can be found in [this repository](https://github.com/nahidsaikat/CSV-to-Google-Sheet "GitHub").
