@@ -13,6 +13,9 @@ template: "page"
 * [Structure Your Project with Flask Blueprint](https://nahidsaikat.com/blog/structure-your-project-with-flask-blueprint/ "Structure Your Project with Flask Blueprint")
 * [From CSV to Google Sheet Using Python](https://nahidsaikat.com/blog/from-csv-to-google-sheet-using-python/ "From CSV to Google Sheet Using Python")
 
+### DevOps
+* [Invoke AWS Lambda from AWS Step Functions with Terraform](https://nahidsaikat.com/blog/invoke-aws-lambda-from-aws-step-functions-with-terraform/ "Invoke AWS Lambda from AWS Step Functions with Terraform")
+
 ### Software Engineering
 * [Layered Architecture](https://nahidsaikat.com/blog/2017/10/11/layered-architecture/ "Layered Architecture")
 
