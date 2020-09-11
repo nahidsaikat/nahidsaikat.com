@@ -11,7 +11,7 @@ tags:
   - "Serverless"
   - "Infrastructure as Code"
   - "Terraform"
-description: ""
+description: "AWS Lambda and AWS Step Functions begins a new era in serverless computing. In this article we will build an infrastructure using terraform that will have an AWS Lambda and an AWS step functions running on it."
 ---
 
 ![Invoke AWS Lambda from AWS Step Functions with Terraform](/media/unsplash/lambda-step-function-terraform.jpg "Invoke AWS Lambda from AWS Step Functions with Terraform")
