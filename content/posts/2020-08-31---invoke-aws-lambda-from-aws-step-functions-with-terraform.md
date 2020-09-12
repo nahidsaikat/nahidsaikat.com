@@ -21,7 +21,7 @@ description: "AWS Lambda and AWS Step Functions begins a new era in serverless c
 #### Terraform
 [Terraform](https://www.terraform.io/intro/index.html "Terraform") is an open-source infrastructure as code software tool. It allows building, changing and versioning the infrastructure. Terraform uses declarative approach to define the infrastructure. User will define the end infrastructure that they want and terraform will do rest of the thing to have that infrastructure.
 
-Terraform allows its users to define and describe the infrastructure using a declarative configuration language known as [HCL or HashiCorp Configuration Language](https://github.com/hashicorp/hcl "HCL"). When the end infrastructure is defined it will do the plan and then executes this plan to provision that infrastructure.
+Terraform allows its users to define and describe the infrastructure using a declarative configuration language known as [HCL or HashiCorp Configuration Language](https://github.com/hashicorp/hcl "HCL"). When the end infrastructure is defined terraform will do the plan and then executes this plan to provision that infrastructure.
 
 Terraform supports all the public clouds like [Amazon Web Services](https://aws.amazon.com/, "AWS"), [Microsoft Azure](https://azure.microsoft.com/en-us/ "Azure"), [Google Cloud Platform](https://cloud.google.com/ "GCP") aw well as private clouds such as [VMWare vSphere](https://www.vmware.com/products/vsphere.html "vSphere"), [CloudStack](https://cloudstack.apache.org/ "CloudStack") or [OpenStack](https://www.openstack.org/ "OpenStack").
 
@@ -32,7 +32,7 @@ In this article we will define an infrastructure for the AWS provider which will
 
 There are three core components of AWS Lambda. **Handler function** is the main function that will be run when lambda executes. **Event Object** is the first augument passed to the function when it gets executed. It contains information about the event invoking the lambda. And the **Context Object** contains lambda runtime information.
 
-So lets define our handler function for the lambda. For that create a folder `lambda` and inside that folder create a file `handler.py`. The code for the handler function is as follow.
+So lets define our handler function for the lambda. For that create a folder `lambda` and inside that folder create a file `handler.py`. The code for the handler function will be as below.
 
 ```python
 import logging
@@ -47,7 +47,7 @@ def handler(event, context):
     event['key'] = 'value'
     return event
 ```
-This is a super simple function. In the function we are logging the event and context object and setting `value` as the value of key `key` in event object. And finally we are returning the updated event object.
+This is a super simple function. In the function we are logging the event object and context object and setting `value` as the value of key `key` in event object. Finally we are returning the updated event object.
 
 Now lets write some terraform code for this lambda function. For that create a folder `terraform` and inside that folder create `lambda.tf` file. The content of this file will be as following.
 
@@ -112,7 +112,7 @@ variable "lambda_function_name" {
   default = "test_lambda"
 }
 ```
-At this point the directory structure will be as follow.
+And at this point the directory structure will be as below.
 ```
 .
 +-- lambda
@@ -209,7 +209,7 @@ provider "aws" {
   profile = "default"
 }
 ```
-Here we are specifying the provider as `aws` and passing the `region` and `profile`. So finally the directory structure will be as follow.
+Here we are specifying the provider as `aws` and passing the `region` and `profile`. So finally the directory structure will be as below.
 
 ```bash
 .
