@@ -19,20 +19,20 @@ description: "AWS Lambda and AWS Step Functions begins a new era in serverless c
 <br>
 
 #### Terraform
-[Terraform](https://www.terraform.io/intro/index.html "Terraform") is an open-source infrastructure as code software tool. It allows building, changing and versioning the infrastructure. Terraform uses declarative approach to define the infrastructure. User will define the end infrastructure that they want and terraform will do rest of the thing to have that infrastructure.
+[Terraform](https://www.terraform.io/intro/index.html "Terraform") is an open-source infrastructure as code software tool. It allows building, changing, and versioning the infrastructure. Terraform uses a declarative approach to define the infrastructure. Users will define the end infrastructure that they want and terraform will do the rest of the thing to have that infrastructure.
 
 Terraform allows its users to define and describe the infrastructure using a declarative configuration language known as [HCL or HashiCorp Configuration Language](https://github.com/hashicorp/hcl "HCL"). When the end infrastructure is defined terraform will do the plan and then executes this plan to provision that infrastructure.
 
-Terraform supports all the public clouds like [Amazon Web Services](https://aws.amazon.com/, "AWS"), [Microsoft Azure](https://azure.microsoft.com/en-us/ "Azure"), [Google Cloud Platform](https://cloud.google.com/ "GCP") aw well as private clouds such as [VMWare vSphere](https://www.vmware.com/products/vsphere.html "vSphere"), [CloudStack](https://cloudstack.apache.org/ "CloudStack") or [OpenStack](https://www.openstack.org/ "OpenStack").
+Terraform supports all the public clouds like [Amazon Web Services](https://aws.amazon.com/, "AWS"), [Microsoft Azure](https://azure.microsoft.com/en-us/ "Azure"), [Google Cloud Platform](https://cloud.google.com/ "GCP") aw well as private clouds such as [VMWare vSphere](https://www.vmware.com/products/vsphere.html "vSphere"), [CloudStack](https://cloudstack.apache.org/ "CloudStack"), or [OpenStack](https://www.openstack.org/ "OpenStack").
 
-In this article we will define an infrastructure for the AWS provider which will have an [AWS Lambda](https://aws.amazon.com/lambda/ "Lambda") and an [AWS Step Functions](https://aws.amazon.com/step-functions/ "Step Functions") working together.
+In this article, we will define an infrastructure for the AWS provider which will have an [AWS Lambda](https://aws.amazon.com/lambda/ "Lambda") and [AWS Step Functions](https://aws.amazon.com/step-functions/ "Step Functions") working together.
 
 #### AWS Lambda
-[AWS Lambda](https://aws.amazon.com/lambda/ "AWS Lambda") is a Function-as-a-Service platform by [Amazon Web Services](https://aws.amazon.com/ "Amazon Web Services"). It can run code without provisioning the servers. Which allows the developers to focus only on code as AWS Lambda is taking care of everything else.
+[AWS Lambda](https://aws.amazon.com/lambda/ "AWS Lambda") is a Function-as-a-Service platform by [Amazon Web Services](https://aws.amazon.com/ "Amazon Web Services"). It can run code without provisioning the servers. This allows the developers to focus only on code as AWS Lambda is taking care of everything else.
 
-There are three core components of AWS Lambda. **Handler function** is the main function that will be run when lambda executes. **Event Object** is the first augument passed to the function when it gets executed. It contains information about the event invoking the lambda. And the **Context Object** contains lambda runtime information.
+There are three core components of AWS Lambda. The **handler function** is the main function that will be run when lambda executes. **Event Object** is the first argument passed to the function when it gets executed. It contains information about the event invoking the lambda. And the **Context Object** contains lambda runtime information.
 
-So lets define our handler function for the lambda. For that create a folder `lambda` and inside that folder create a file `handler.py`. The code for the handler function will be as below.
+So let's define our handler function for the lambda. For that create a folder `lambda` and inside that folder create a file `handler.py`. The code for the handler function will be as below.
 
 ```python
 import logging
@@ -47,9 +47,9 @@ def handler(event, context):
     event['key'] = 'value'
     return event
 ```
-This is a super simple function. In the function we are logging the event object and context object and setting `value` as the value of key `key` in event object. Finally we are returning the updated event object.
+This is a super simple function. In the function, we are logging the event object and context object and set `value` as the value of the key `key` in the event object. Finally, we are returning the updated event object.
 
-Now lets write some terraform code for this lambda function. For that create a folder `terraform` and inside that folder create `lambda.tf` file. The content of this file will be as following.
+Now let's write some terraform code for this lambda function. For that create a folder `terraform` and inside that folder create a file `lambda.tf`. The content of this file will be as follows.
 
 ```bash
 // Lambda function
@@ -101,9 +101,9 @@ data "aws_iam_policy_document" "lambda_assume_role_policy_document" {
 }
 ```
 
-Here we are creating two resources `aws_lambda_function` and `aws_iam_role`. The lambda function that we defined earlier is being zipped in `archive_file` and it is also being refered in `aws_lambda_function` resource. We are creating `aws_iam_role` resource as lambda requires it to run the function. The policy document of this resource is defined in `aws_iam_policy_document` data object.
+Here we are creating two resources `aws_lambda_function` and `aws_iam_role`. The lambda function that we defined earlier is being zipped in `archive_file` and it is also being referred to in `aws_lambda_function` resource. We are creating `aws_iam_role` resources as lambda requires it to run the function. The policy document of this resource is defined in `aws_iam_policy_document` the data object.
 
-One imfortant thing to note here is that we are taking the name of the lambda function from `var.lambda_function_name`. Terraform allows us to define some variables and use them in the terraform files. So lets create a file `vars.tf` that will contain all of our variables. For now it contains only the following.
+One important thing to note here is that we are taking the name of the lambda function from `var.lambda_function_name`. Terraform allows us to define some variables and use them in the terraform files. So let's create a file `vars.tf` that will contain all of our variables. For now, it contains only the following.
 
 ```csharp
 variable "lambda_function_name" {
@@ -112,7 +112,7 @@ variable "lambda_function_name" {
   default = "test_lambda"
 }
 ```
-And at this point the directory structure will be as below.
+And at this point, the directory structure will be as below.
 ```
 .
 +-- lambda
@@ -124,7 +124,7 @@ And at this point the directory structure will be as below.
 <br>
 
 #### AWS Step Functions
-[AWS Step Functions](https://aws.amazon.com/step-functions/ "AWS Step Functions") is the orchestration of serverless microservice architecture. It devides a complex business workflow into smaller steps and implement them in AWS Lambda or other AWS services. The main building blocks of AWS Step Functions is the states. There are several types of state like [Task, Pass, Choice, Wait, Parallel, Map, Fail and Succeed](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-states.html "States"). The states are defined in [AWS States Language](https://states-language.net/ "AWS States Language") which is a JSON-based specification language. AWS Step Functions executes the states according to the order in which they are defined and retry them if any error or exception occurs.
+[AWS Step Functions](https://aws.amazon.com/step-functions/ "AWS Step Functions") is the orchestration of serverless microservice architecture. It divides a complex business workflow into smaller steps and implements them in AWS Lambda or other AWS services. The main building blocks of AWS Step Functions are the states. There are several types of state like [Task, Pass, Choice, Wait, Parallel, Map, Fail, and Succeed](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-states.html "States"). The states are defined in [AWS States Language](https://states-language.net/ "AWS States Language") which is a JSON-based specification language. AWS Step Functions execute the states according to the order in which they are defined and retry them if any error or exception occurs.
 
 Now that we know what AWS Step Functions actually is, it's time to define a step function in terraform which will invoke the lambda that we have defined earlier. For that create a file `step_function.tf` inside the `terraform` folder and put the below code in that file.
 
@@ -231,7 +231,7 @@ terraform apply   # apply the infrastructure in AWS
 After performing those commands login to your [AWS Step Functions console](https://console.aws.amazon.com/states/home "AWS Step Functions console") and start the execution of the step function ("which you just deployed") by clicking the `Start Execution` button.
 ![Start Execution](/media/step_function_start.png "Start Execution")
 
-As it is a simple step function, so it will get executed imediately. And you can see the key-value pair that we have set in the lambda handler is showing in the output of the step function.
+As it is a simple step function, so it will get executed immediately. And you can see the key-value pair that we have set in the lambda handler is showing in the output of the step function.
 ![Execution Result](/media/step_function_result.png "Execution Result")
 
 The complete code of this article can be found in [this repository](https://github.com/nahidsaikat/blog-post-code/tree/master/invoke-aws-lambda-from-aws-step-functions-with-terraform "GitHub").
