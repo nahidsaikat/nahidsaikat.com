@@ -8,7 +8,7 @@ category: "Python"
 tags:
   - "Python39"
   - "Language"
-description: ""
+description: "Python 3.9 is released on 5th October, 2020 and is now available. It comes with some of the great features and lots of improvements."
 ---
 
 ![Invoke AWS Lambda from AWS Step Functions with Terraform](/media/unsplash/new-in-python39.jpg "Invoke AWS Lambda from AWS Step Functions with Terraform")

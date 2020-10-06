@@ -4,6 +4,7 @@ template: "page"
 ---
 
 ### Python
+* [Some New Features of Python 3.9](http://nahidsaikat.com/blog/some-new-features-of-python-3.9/ "Some New Features of Python 3.9")
 * Magic of Python: Python Descriptors
 * Magic of Python: Python Decorator
 * Magic of Python: Python Iterator
