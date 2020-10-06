@@ -3,7 +3,7 @@ title: "About me"
 template: "page"
 ---
 
-Hi, This is Md. Nahidur Rahman. Backend Developer at KajKey.com.
+Hi, I am Md. Nahidur Rahman. I am Software Engineer.
 
 I consider myself as Pythonista and love to program in Python. I also like JavaScript. 
 
