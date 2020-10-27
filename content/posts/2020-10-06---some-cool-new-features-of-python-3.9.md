@@ -12,7 +12,7 @@ tags:
 description: "Python 3.9 is released on 5th October, 2020 and is now available. It comes with some of the great features and lots of improvements."
 ---
 
-![Invoke AWS Lambda from AWS Step Functions with Terraform](/media/unsplash/new-in-python39.jpg "Invoke AWS Lambda from AWS Step Functions with Terraform")
+![Some Cool New Features of Python 3.9](/media/unsplash/new-in-python39.jpg "Some Cool New Features of Python 3.9")
 <center><span>Photo by <a href="https://unsplash.com/@setyaki?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Setyaki Irham</a> on <a href="https://unsplash.com/s/photos/sphere?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></center>
 <br>
 
