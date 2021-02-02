@@ -1,8 +1,121 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Nahid Saikat]]></title><description><![CDATA[Pythonista | JavaScripter | Software Engineer | Reader]]></description><link>https://www.nahidsaikat.com/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 27 Oct 2020 18:06:25 GMT</lastBuildDate><item><title><![CDATA[Process AWS DynamoDB Streams by AWS Lambda with Terraform]]></title><description><![CDATA[Python 3.9 is released on 5th October, 2020 and is now available. It comes with some of the great features and lots of improvements.]]></description><link>https://www.nahidsaikat.com//blog/process-aws-dynamodb-streams-by-aws-lambda-with-terraform/</link><guid isPermaLink="false">https://www.nahidsaikat.com//blog/process-aws-dynamodb-streams-by-aws-lambda-with-terraform/</guid><pubDate>Tue, 06 Oct 2020 00:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;/media/unsplash/new-in-python39.jpg&quot; alt=&quot;Process AWS DynamoDB Streams by AWS Lambda with Terraform&quot; title=&quot;Process AWS DynamoDB Streams by AWS Lambda with Terraform&quot;&gt;&lt;/p&gt;
-&lt;center&gt;&lt;span&gt;Photo by &lt;a href=&quot;https://unsplash.com/@setyaki?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Setyaki Irham&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/sphere?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/span&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Nahid Saikat]]></title><description><![CDATA[Pythonista | JavaScripter | Software Engineer | Reader]]></description><link>https://www.nahidsaikat.com/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 02 Feb 2021 10:31:20 GMT</lastBuildDate><item><title><![CDATA[Process AWS DynamoDB Streams by AWS Lambda with Terraform]]></title><description><![CDATA[This article discusses how we can tregger a AWS Lambda function from DynamoDB tables using DynamoDB Streams.]]></description><link>https://www.nahidsaikat.com//blog/process-aws-dynamodb-streams-by-aws-lambda-with-terraform/</link><guid isPermaLink="false">https://www.nahidsaikat.com//blog/process-aws-dynamodb-streams-by-aws-lambda-with-terraform/</guid><pubDate>Tue, 02 Feb 2021 00:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;/media/unsplash/process-aws-dynamodb-streams-by-aws-lambda.jpg&quot; alt=&quot;Process AWS DynamoDB Streams by AWS Lambda with Terraform&quot; title=&quot;Process AWS DynamoDB Streams by AWS Lambda with Terraform&quot;&gt;&lt;/p&gt;
+&lt;center&gt;&lt;span&gt;Photo by &lt;a href=&quot;https://unsplash.com/@kaitduffey17?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Kaitlin Duffey&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/span&gt;
 &lt;/center&gt;
 &lt;br&gt;
-&lt;p&gt;The complete code of this article can be found in &lt;a href=&quot;https://github.com/nahidsaikat/blog-post-code/tree/master/invoke-aws-lambda-from-aws-step-functions-with-terraform&quot; title=&quot;GitHub&quot;&gt;this repository&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Some Cool New Features of Python 3.9]]></title><description><![CDATA[Python 3.9 is released on 5th October, 2020 and is now available. It comes with some of the great features and lots of improvements.]]></description><link>https://www.nahidsaikat.com//blog/some-cool-new-features-of-python-3.9/</link><guid isPermaLink="false">https://www.nahidsaikat.com//blog/some-cool-new-features-of-python-3.9/</guid><pubDate>Tue, 06 Oct 2020 00:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;/media/unsplash/new-in-python39.jpg&quot; alt=&quot;Some Cool New Features of Python 3.9&quot; title=&quot;Some Cool New Features of Python 3.9&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://aws.amazon.com/dynamodb/&quot; title=&quot;AWS DynamoDB&quot;&gt;AWS DynamoDB&lt;/a&gt; is a &lt;code class=&quot;language-text&quot;&gt;key-vlaue&lt;/code&gt; based NoSQL Database as a service(DBaaS) provided by Amazon Web Services. It offers a fully managed multi region database with build-in security, backup and restore facilities. It also has in-memory caching for internet-scale applications.&lt;/p&gt;
+&lt;p&gt;On the other hands, &lt;a href=&quot;https://aws.amazon.com/lambda/&quot; title=&quot;AWS Lambda&quot;&gt;AWS Lambda&lt;/a&gt; is a serverless compute service offered by Amazon Web Services. AWS Lambda allow you to run code without provisioning or managing servers so that you can focus only on code.&lt;/p&gt;
+&lt;p&gt;Both of the services are very useful and they solve lots of problems we face in our daily software development process. In this article we will discuss how we can use both of the services together using DynamoDB streams.&lt;/p&gt;
+&lt;p&gt;DynamoDB streams is a feature that allows us to capture the events in DynamoDB tables. DynamoDB Streams stores “creates”, “updates” and “deletes” events from a DynamoDB tables when enabled. It maintains ordered flow of information and ensures that each stream record appears exactly once in the stream. We can set an AWS Lambda to get triggered when an item appears in the stream and precess the data.&lt;/p&gt;
+&lt;p&gt;For that purpose let’s create a DynamoDB table using terraform.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;resource &amp;quot;aws_dynamodb_table&amp;quot; &amp;quot;dynamodb_table&amp;quot; {
+  name             = &amp;quot;lambda-dynamodb-stream&amp;quot;
+  billing_mode     = &amp;quot;PAY_PER_REQUEST&amp;quot;
+  hash_key         = &amp;quot;Id&amp;quot;
+  stream_enabled   = true
+  stream_view_type = &amp;quot;NEW_AND_OLD_IMAGES&amp;quot;
+
+  attribute {
+    name = &amp;quot;Id&amp;quot;
+    type = &amp;quot;S&amp;quot;
+  }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;One thing to notice here is that we are setting &lt;code class=&quot;language-text&quot;&gt;stream_enabled  = true&lt;/code&gt; which will enable the stream in the table. By default the stream is not enabled so we needs to enable it by ourselfs.&lt;/p&gt;
+&lt;p&gt;Next we will create a lambda function. The terraform code that will create a lambda function is as follow.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;resource &amp;quot;aws_lambda_function&amp;quot; &amp;quot;lambda_function&amp;quot; {
+  function_name    = &amp;quot;process-dynamodb-records&amp;quot;
+  filename         = data.archive_file.lambda_zip_file.output_path
+  source_code_hash = data.archive_file.lambda_zip_file.output_base64sha256
+  handler          = &amp;quot;handler.handler&amp;quot;
+  role             = aws_iam_role.lambda_assume_role.arn
+  runtime          = &amp;quot;python3.8&amp;quot;
+
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+
+data &amp;quot;archive_file&amp;quot; &amp;quot;lambda_zip_file&amp;quot; {
+  output_path = &amp;quot;${path.module}/lambda_zip/lambda.zip&amp;quot;
+  source_dir  = &amp;quot;${path.module}/../lambda&amp;quot;
+  excludes    = [&amp;quot;__init__.py&amp;quot;, &amp;quot;*.pyc&amp;quot;]
+  type        = &amp;quot;zip&amp;quot;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;As we have the DynamoDB table and Lambda function created on our hand, now we needs to create an event source mapping so that this lambda gets triggered when DynamoDB stream has data in it.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;resource &amp;quot;aws_lambda_event_source_mapping&amp;quot; &amp;quot;example&amp;quot; {
+  event_source_arn  = aws_dynamodb_table.dynamodb_table.stream_arn
+  function_name     = aws_lambda_function.lambda_function.arn
+  starting_position = &amp;quot;LATEST&amp;quot;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The lambda also requires an &lt;code class=&quot;language-text&quot;&gt;IAM&lt;/code&gt; role so that it can reads the stream data.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;resource &amp;quot;aws_iam_role&amp;quot; &amp;quot;lambda_assume_role&amp;quot; {
+  name               = &amp;quot;lambda-dynamodb-role&amp;quot;
+  assume_role_policy = &amp;lt;&amp;lt;EOF
+{
+  &amp;quot;Version&amp;quot;: &amp;quot;2012-10-17&amp;quot;,
+  &amp;quot;Statement&amp;quot;: [
+    {
+      &amp;quot;Action&amp;quot;: &amp;quot;sts:AssumeRole&amp;quot;,
+      &amp;quot;Principal&amp;quot;: {
+        &amp;quot;Service&amp;quot;: &amp;quot;lambda.amazonaws.com&amp;quot;
+      },
+      &amp;quot;Effect&amp;quot;: &amp;quot;Allow&amp;quot;,
+      &amp;quot;Sid&amp;quot;: &amp;quot;LambdaAssumeRole&amp;quot;
+    }
+  ]
+}
+EOF
+}
+
+resource &amp;quot;aws_iam_role_policy&amp;quot; &amp;quot;dynamodb_read_log_policy&amp;quot; {
+  name   = &amp;quot;lambda-dynamodb-log-policy&amp;quot;
+  role   = aws_iam_role.lambda_assume_role.id
+  policy = &amp;lt;&amp;lt;EOF
+{
+  &amp;quot;Version&amp;quot;: &amp;quot;2012-10-17&amp;quot;,
+  &amp;quot;Statement&amp;quot;: [
+    {
+        &amp;quot;Action&amp;quot;: [ &amp;quot;logs:*&amp;quot; ],
+        &amp;quot;Effect&amp;quot;: &amp;quot;Allow&amp;quot;,
+        &amp;quot;Resource&amp;quot;: [ &amp;quot;arn:aws:logs:*:*:*&amp;quot; ]
+    },
+    {
+        &amp;quot;Action&amp;quot;: [ &amp;quot;dynamodb:BatchGetItem&amp;quot;,
+                    &amp;quot;dynamodb:GetItem&amp;quot;,
+                    &amp;quot;dynamodb:GetRecords&amp;quot;,
+                    &amp;quot;dynamodb:Scan&amp;quot;, We will have the recores inside of the lambda function in event `object`. We can also configure the stream to capture additional data such as &amp;quot;before&amp;quot; and &amp;quot;after&amp;quot; images of modified items.
+                    &amp;quot;dynamodb:Query&amp;quot;,
+                    &amp;quot;dynamodb:GetShardIterator&amp;quot;,
+                    &amp;quot;dynamodb:DescribeStream&amp;quot;,
+                    &amp;quot;dynamodb:ListStreams&amp;quot; ],
+        &amp;quot;Effect&amp;quot;: &amp;quot;Allow&amp;quot;,
+        &amp;quot;Resource&amp;quot;: [
+          &amp;quot;${aws_dynamodb_table.dynamodb_table.arn}&amp;quot;,
+          &amp;quot;${aws_dynamodb_table.dynamodb_table.arn}/*&amp;quot;
+        ]
+    }
+  ]
+}
+EOF
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And the final thing that we will require is the handler of the lambda function.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; logging
+
+LOGGER &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; logging&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;getLogger&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+LOGGER&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;setLevel&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;logging&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;INFO&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;event&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; context&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; record &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; event&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Records&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        LOGGER&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;info&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;record&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;eventID&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        LOGGER&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;info&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;record&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;eventName&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+        LOGGER&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;info&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;record&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;dynamodb&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; event&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We will have the records inside of the lambda function in &lt;code class=&quot;language-text&quot;&gt;event&lt;/code&gt; object. We can also configure the stream to capture additional data such as “before” and “after” images of modified items.&lt;/p&gt;
+&lt;p&gt;When everything is set up, run the following commands in your terminal to deploy the insfrastructure in AWS. Make sure that you have &lt;code class=&quot;language-text&quot;&gt;default&lt;/code&gt; AWS profile is already set.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;terraform init
+terraform plan
+terraform apply&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The complete code of this article can be found in &lt;a href=&quot;https://github.com/nahidsaikat/blog-post-code/tree/master/process-aws-dynamodb-streams-by-aws-lambda-with-terraform&quot; title=&quot;GitHub&quot;&gt;this repository&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Some Cool New Features of Python 3.9]]></title><description><![CDATA[Python 3.9 is released on 5th October, 2020 and is now available. It comes with some of the great features and lots of improvements.]]></description><link>https://www.nahidsaikat.com//blog/some-cool-new-features-of-python-3.9/</link><guid isPermaLink="false">https://www.nahidsaikat.com//blog/some-cool-new-features-of-python-3.9/</guid><pubDate>Tue, 06 Oct 2020 00:12:03 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;/media/unsplash/new-in-python39.jpg&quot; alt=&quot;Some Cool New Features of Python 3.9&quot; title=&quot;Some Cool New Features of Python 3.9&quot;&gt;&lt;/p&gt;
 &lt;center&gt;&lt;span&gt;Photo by &lt;a href=&quot;https://unsplash.com/@setyaki?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Setyaki Irham&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/sphere?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/span&gt;&lt;/center&gt;
 &lt;br&gt;
 &lt;p&gt;Python 3.9 is released on 5th October 2020 and is now available. It comes with some of the great features and lots of improvements. In this article, we will explore some of its cool features. &lt;/p&gt;

@@ -3,12 +3,11 @@
 <url> <loc>https://www.nahidsaikat.com/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.nahidsaikat.com/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.nahidsaikat.com/blog/2017/08/11/gst-reverse-charge-mechanism/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/2017/07/26/solid-principles</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.nahidsaikat.com/blog/2017/08/11/gst-reverse-charge-mechanism/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/2017/08/20/gst-revised-invoice/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.nahidsaikat.com/blog/2017/08/26/gst-job-work-process/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/2017/09/03/gst-advanced-receive/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.nahidsaikat.com/blog/2017/08/26/gst-job-work-process/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/2017/09/16/gst-refund-voucher/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/2017/09/28/gst-input-tax-credit/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/2017/10/11/layered-architecture/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -27,8 +26,9 @@
 <url> <loc>https://www.nahidsaikat.com/blog/structure-your-project-with-flask-blueprint/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/from-csv-to-google-sheet-using-python/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/invoke-aws-lambda-from-aws-step-functions-with-terraform/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.nahidsaikat.com/blog/process-aws-dynamodb-streams-by-aws-lambda-with-terraform/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/blog/some-cool-new-features-of-python-3.9/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.nahidsaikat.com/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://www.nahidsaikat.com/blog/process-aws-dynamodb-streams-by-aws-lambda-with-terraform/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/tag/aws-dynamo-db</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/tag/aws-lambda</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.nahidsaikat.com/tag/aws-step-functions</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
