@@ -25,7 +25,7 @@ On the other hands, [AWS Lambda](https://aws.amazon.com/lambda/ "AWS Lambda") is
 
 Both of the services are very useful and they solve lots of problems we face in our daily software development process. In this article we will discuss how we can use both of the services together using DynamoDB streams.
 
-DynamoDB streams is a feature that allows us to capture the events in DynamoDB tables. DynamoDB Streams stores "creates", "updates" and "deletes" events from a DynamoDB tables when enabled. It maintains ordered flow of information and ensures that each stream record appears exactly once in the stream. We can set an AWS Lambda to get triggered when an item appears in the stream and precess the data.
+DynamoDB streams is a feature that allows us to capture the events in DynamoDB tables. DynamoDB Streams stores "creates", "updates" and "deletes" events from a DynamoDB tables when enabled. It maintains ordered flow of information and ensures that each stream record appears exactly once in the stream. We can set an AWS Lambda to get triggered when an item appears in the stream and process the data.
 
 For that purpose let's create a DynamoDB table using terraform.
 
@@ -43,7 +43,7 @@ resource "aws_dynamodb_table" "dynamodb_table" {
   }
 }
 ```
-One thing to notice here is that we are setting `stream_enabled  = true` which will enable the stream in the table. By default the stream is not enabled so we needs to enable it by ourselfs.
+One thing to notice here is that we are setting `stream_enabled  = true` which will enable the stream in the table. By default the stream is not enabled so we needs to enable it by ourself.
 
 Next we will create a lambda function. The terraform code that will create a lambda function is as follow.
 ```
@@ -148,7 +148,7 @@ def handler(event, context):
 ```
 We will have the records inside of the lambda function in `event` object. We can also configure the stream to capture additional data such as "before" and "after" images of modified items.
 
-When everything is set up, run the following commands in your terminal to deploy the insfrastructure in AWS. Make sure that you have `default` AWS profile is already set.
+When everything is set up, run the following commands in your terminal to deploy the infrastructure in AWS. Make sure that you have `default` AWS profile is already set.
 ```
 terraform init
 terraform plan
