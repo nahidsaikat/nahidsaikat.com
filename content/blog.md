@@ -16,6 +16,7 @@ template: "page"
 
 ### DevOps
 * [Invoke AWS Lambda from AWS Step Functions with Terraform](https://nahidsaikat.com/blog/invoke-aws-lambda-from-aws-step-functions-with-terraform/ "Invoke AWS Lambda from AWS Step Functions with Terraform")
+* [Process AWS DynamoDB Streams by AWS Lambda with Terraform](https://nahidsaikat.com/blog/process-aws-dynamodb-streams-by-aws-lambda-with-terraform/ "Process AWS DynamoDB Streams by AWS Lambda with Terraform")
 
 ### Software Engineering
 * [Layered Architecture](https://nahidsaikat.com/blog/2017/10/11/layered-architecture/ "Layered Architecture")
