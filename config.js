@@ -2,11 +2,11 @@
 
 module.exports = {
   url: 'https://www.nahidsaikat.com/',
-  title: 'Blog by Nahid Saikat',
-  subtitle: 'Pythonista | JavaScripter | Software Engineer | Reader',
+  title: 'Blog by Nahidur Rahman',
+  subtitle: 'Pythonista | Problem Solver | Reader',
   copyright: '© All rights reserved.',
   disqusShortname: '',
-  postsPerPage: 6,
+  postsPerPage: 10,
   googleAnalyticsId: 'UA-73379983-2',
   menu: [
     {
@@ -19,16 +19,15 @@ module.exports = {
     }
   ],
   author: {
-    name: 'Nahid Saikat',
+    name: 'Nahidur Rahman',
     photo: '/photo.jpg',
-    bio: 'Pythonista | JavaScripter | Software Engineer | Reader',
+    bio: 'Pythonista | Problem Solver | Reader',
     contacts: {
       email: 'hello@nahidsaikat.com',
       github: 'nahidsaikat',
-      telegram: '#',
+      telegram: 'nahidsaikat',
       facebook: 'nahid.saikat.944',
-      twitter: 'nahidsaikatft40',
-      rss: '#'
+      twitter: 'nahidsaikatft40'
     }
   }
 };
