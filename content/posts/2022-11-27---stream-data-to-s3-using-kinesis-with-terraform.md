@@ -187,3 +187,7 @@ After running the python code data should be delivered to the S3 bucket. And it 
 <br>
 
 The complete code of this article can be found in [this repository](https://github.com/nahidsaikat/blog-post-code/tree/master/process-aws-dynamodb-streams-by-aws-lambda-with-terraform "GitHub").
+
+### References
+* [Delivering Real-time Streaming Data to Amazon S3 Using Amazon Kinesis Data Firehose](https://towardsdatascience.com/delivering-real-time-streaming-data-to-amazon-s3-using-amazon-kinesis-data-firehose-2cda5c4d1efe)
+* [Stream Data with python and AWS Kinesis](https://blacksheephacks.pl/stream-data-with-python-and-aws-kinesis/)
