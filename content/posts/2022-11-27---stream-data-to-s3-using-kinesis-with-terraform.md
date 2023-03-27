@@ -186,7 +186,7 @@ After running the python code data should be delivered to the S3 bucket. And it 
 </center>
 <br>
 
-The complete code of this article can be found in [this repository](https://github.com/nahidsaikat/blog-post-code/tree/master/process-aws-dynamodb-streams-by-aws-lambda-with-terraform "GitHub").
+The complete code of this article can be found in [this repository](https://github.com/nahidsaikat/blog-post-code/tree/master/stream-data-to-s3-using-kinesis-and-firehose-with-terraform "GitHub").
 
 ### References
 * [Delivering Real-time Streaming Data to Amazon S3 Using Amazon Kinesis Data Firehose](https://towardsdatascience.com/delivering-real-time-streaming-data-to-amazon-s3-using-amazon-kinesis-data-firehose-2cda5c4d1efe)
