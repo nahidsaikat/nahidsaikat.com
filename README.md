@@ -1,17 +1,14 @@
 ## Table of contents
 ### Python
 * [Some New Features of Python 3.9](http://nahidsaikat.com/blog/some-new-features-of-python-3.9/ "Some New Features of Python 3.9")
-* Magic of Python: Python Descriptors
-* Magic of Python: Python Decorator
-* Magic of Python: Python Iterator
-* Magic of Python: Python Generator
-* Magic of Python: Python Context Manager
 * [Flask with SQLAlchemy & Marshmallow](https://nahidsaikat.com/blog/flask-with-sqlalchemy-and-marshmallow/ "Flask with SQLAlchemy & Marshmallow")
 * [Structure Your Project with Flask Blueprint](https://nahidsaikat.com/blog/structure-your-project-with-flask-blueprint/ "Structure Your Project with Flask Blueprint")
 * [From CSV to Google Sheet Using Python](https://nahidsaikat.com/blog/from-csv-to-google-sheet-using-python/ "From CSV to Google Sheet Using Python")
 
 ### DevOps
+* [Stream Data to S3 Using Kinesis and Firehose with Terraform](https://nahidsaikat.com/blog/stream-data-to-s3-using-kinesis-and-firehose-with-terraform/ "Stream Data to S3 Using Kinesis and Firehose with Terraform")
 * [Invoke AWS Lambda from AWS Step Functions with Terraform](https://nahidsaikat.com/blog/invoke-aws-lambda-from-aws-step-functions-with-terraform/ "Invoke AWS Lambda from AWS Step Functions with Terraform")
+* [Process AWS DynamoDB Streams by AWS Lambda with Terraform](https://nahidsaikat.com/blog/process-aws-dynamodb-streams-by-aws-lambda-with-terraform/ "Process AWS DynamoDB Streams by AWS Lambda with Terraform")
 
 ### Software Engineering
 * [Layered Architecture](https://nahidsaikat.com/blog/2017/10/11/layered-architecture/ "Layered Architecture")
@@ -45,6 +42,10 @@
 * [GST – Refund Voucher](https://nahidsaikat.com/blog/2017/09/16/gst-refund-voucher/ "GST - Refund Voucher")
 * [GST – Job Work Process](https://nahidsaikat.com/blog/2017/08/26/gst-job-work-process/ "GST - Job Work Process")
 
+<hr>
+
+[Gatsby Template](https://github.com/alxshelepenok/gatsby-starter-lumen)
+<hr>
 
 ## License
 The MIT License (MIT)
