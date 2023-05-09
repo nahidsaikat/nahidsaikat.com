@@ -51,14 +51,14 @@ As we are familiar with the tools that we will be using, its time to write some 
 Creating S3 bucket,
 ```
 resource "aws_s3_bucket" "demo_bucket" {
-  bucket = "demo-bucket"
+  bucket = "${var.kinesis_stream_name}-data"
 
   tags = {
-    Environment = "demo"
+    Product = "Martailer"
   }
 }
 
-resource "aws_s3_bucket_acl" "bucket_acl" {
+resource "aws_s3_bucket_acl" "demo_bucket_acl" {
   bucket = aws_s3_bucket.demo_bucket.id
   acl    = "private"
 }
@@ -67,47 +67,70 @@ resource "aws_s3_bucket_acl" "bucket_acl" {
 Creating Kinesis Data Stream,
 ```
 resource "aws_kinesis_stream" "demo_stream" {
-  name             = "terraform-kinesis-demo"
-  shard_count      = 1
-  retention_period = 48
-
-  shard_level_metrics = [
-    "IncomingBytes",
-    "OutgoingBytes",
-  ]
+  name             = "${var.kinesis_stream_name}"
+  retention_period = 24
 
   stream_mode_details {
-    stream_mode = "PROVISIONED"
+    stream_mode = "ON_DEMAND"
   }
 
   tags = {
-    Environment = "demo"
+    Product = "Demo"
   }
 }
 ```
 
 Creating Kinesis Firehose Delivery Stream,
 ```
-resource "aws_kinesis_firehose_delivery_stream" "extended_s3_stream" {
-  name        = "terraform-kinesis-firehose-extended-s3-test-stream"
+resource "aws_kinesis_firehose_delivery_stream" "demo_delivery_stream" {
+  name        = "${var.kinesis_stream_name}-delivery"
   destination = "extended_s3"
 
   extended_s3_configuration {
-    role_arn   = aws_iam_role.firehose_role.arn
+    role_arn   = aws_iam_role.firehose.arn
     bucket_arn = aws_s3_bucket.demo_bucket.arn
 
-    prefix              = "data/year=!{timestamp:yyyy}/month=!{timestamp:MM}/day=!{timestamp:dd}/hour=!{timestamp:HH}/"
-    error_output_prefix = "errors/year=!{timestamp:yyyy}/month=!{timestamp:MM}/day=!{timestamp:dd}/hour=!{timestamp:HH}/!{firehose:error-output-type}/"
+    buffer_size = 5
+    buffer_interval = 60
 
-    buffer_size = 64
-    processing_configuration {
-      enabled = "false"
+    cloudwatch_logging_options {
+      enabled = "true"
+      log_group_name = aws_cloudwatch_log_group.demo_firebose_log_group.name
+      log_stream_name = aws_cloudwatch_log_stream.demo_firebose_log_stream.name
     }
+  }
+
+  kinesis_source_configuration {
+    kinesis_stream_arn  = aws_kinesis_stream.demo_stream.arn
+    role_arn            = aws_iam_role.firehose.arn
+  }
+
+  tags = {
+    Product = "Demo"
+  }
+}
+```
+
+Creating CloudWatch Log Group,
+```
+resource "aws_cloudwatch_log_group" "demo_firebose_log_group" {
+  name = "/aws/kinesisfirehose/${var.kinesis_stream_name}-delivery"
+
+  tags = {
+    Product = "Demo"
   }
 }
 
-resource "aws_iam_role" "firehose_role" {
-  name = "firehose_test_role"
+resource "aws_cloudwatch_log_stream" "demo_firebose_log_stream" {
+  name           = "/aws/kinesisfirehose/${var.kinesis_stream_name}-stream"
+  log_group_name = aws_cloudwatch_log_group.demo_firebose_log_group.name
+}
+```
+
+Creating IAM Role and Policy,
+```
+resource "aws_iam_role" "firehose" {
+  name = "DemoFirehoseAssumeRole"
 
   assume_role_policy = <<EOF
 {
@@ -125,8 +148,136 @@ resource "aws_iam_role" "firehose_role" {
 }
 EOF
 }
+
+resource "aws_iam_policy" "firehose_s3" {
+  name_prefix = var.iam_name_prefix
+  policy      = <<-EOF
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+        "Sid": "",
+        "Effect": "Allow",
+        "Action": [
+            "s3:AbortMultipartUpload",
+            "s3:GetBucketLocation",
+            "s3:GetObject",
+            "s3:ListBucket",
+            "s3:ListBucketMultipartUploads",
+            "s3:PutObject"
+        ],
+        "Resource": [
+            "${aws_s3_bucket.demo_bucket.arn}",
+            "${aws_s3_bucket.demo_bucket.arn}/*"
+        ]
+    }
+  ]
+}
+EOF
+}
+
+resource "aws_iam_role_policy_attachment" "firehose_s3" {
+  role       = aws_iam_role.firehose.name
+  policy_arn = aws_iam_policy.firehose_s3.arn
+}
+
+resource "aws_iam_policy" "put_record" {
+  name_prefix = var.iam_name_prefix
+  policy      = <<-EOF
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "firehose:PutRecord",
+                "firehose:PutRecordBatch"
+            ],
+            "Resource": [
+                "${aws_kinesis_firehose_delivery_stream.demo_delivery_stream.arn}"
+            ]
+        }
+    ]
+}
+EOF
+}
+
+resource "aws_iam_role_policy_attachment" "put_record" {
+  role       = aws_iam_role.firehose.name
+  policy_arn = aws_iam_policy.put_record.arn
+}
+
+resource "aws_iam_policy" "firehose_cloudwatch" {
+  name_prefix = var.iam_name_prefix
+
+  policy = <<EOF
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+        "Sid": "",
+        "Effect": "Allow",
+        "Action": [
+            "logs:CreateLogStream",
+            "logs:PutLogEvents"
+        ],
+        "Resource": [
+            "${aws_cloudwatch_log_group.demo_firebose_log_group.arn}"
+        ]
+    }
+  ]
+}
+EOF
+}
+
+resource "aws_iam_role_policy_attachment" "firehose_cloudwatch" {
+  role       = aws_iam_role.firehose.name
+  policy_arn = aws_iam_policy.firehose_cloudwatch.arn
+}
+
+resource "aws_iam_policy" "kinesis_firehose" {
+  name_prefix = var.iam_name_prefix
+
+  policy = <<EOF
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+        "Sid": "",
+        "Effect": "Allow",
+        "Action": [
+            "kinesis:DescribeStream",
+            "kinesis:GetShardIterator",
+            "kinesis:GetRecords",
+            "kinesis:ListShards"
+        ],
+        "Resource": "${aws_kinesis_stream.demo_stream.arn}"
+    }
+  ]
+}
+EOF
+}
+
+resource "aws_iam_role_policy_attachment" "kinesis_firehose" {
+  role       = aws_iam_role.firehose.name
+  policy_arn = aws_iam_policy.kinesis_firehose.arn
+}
 ```
-If you can notice that we also created an IAM role for the firehose so that it can write to S3 bucket.
+
+And finally the terraform variables,
+```
+variable "kinesis_stream_name" {
+  description = "Kinesis Data Stream Name"
+  default     = "demo-event-log-stream"
+}
+
+variable "iam_name_prefix" {
+  description = "Prefix used for all created IAM roles and policies"
+  type        = string
+  nullable    = false
+  default     = "demo-kinesis-firehose-"
+}
+```
 
 Now that we are finished writing the terraform code it's time to apply it to AWS. For this we need to configure the provider.
 ```
