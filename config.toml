@@ -91,7 +91,7 @@ disqusShortname = ''
   # Note: image is not rendered if the resource(avatar image) is not found. No error is displayed.
   intro = "Blog by Nahid"
   name = "Nahidur Rahman"
-  description = "A fast, minimalistic Hugo theme with light and dark mode support, for running a personal site or blog."
+  description = "Documenting my learning through blog posts."
 
 # Allow to override webmanifest options
 [Languages.en-gb.params.webmanifest]
