@@ -217,4 +217,4 @@ F-string is a nice tool for string interpolation and formatting. By interpolatin
 * [Python's F-String for String Interpolation and Formatting](https://realpython.com/python-f-strings/)
 * [The Complete Guide to Python f-Strings](https://www.nickmccullum.com/complete-guide-python-f-strings/)
 * [Python f-string cheat sheets](https://fstring.help/cheat/)
-* []()
+* [F-Strings Have A Lot of Format Modifiers You Don't Know](https://youtu.be/dlfn1WrZZ2M?si=NobbD74Jr_z3ImZ8)
