@@ -1,6 +1,7 @@
 ## Table of contents
 ### Python
-* [Some New Features of Python 3.9](http://nahidsaikat.com/blog/some-new-features-of-python-3.9/ "Some New Features of Python 3.9")
+* [What You Can Do with Python's F-String](https://nahidsaikat.com/posts/what-you-can-do-with-fstrings-in-python/ "What You Can Do with Python's F-String")
+* [Some New Features of Python 3.9](https://nahidsaikat.com/blog/some-new-features-of-python-3.9/ "Some New Features of Python 3.9")
 * [Flask with SQLAlchemy & Marshmallow](https://nahidsaikat.com/blog/flask-with-sqlalchemy-and-marshmallow/ "Flask with SQLAlchemy & Marshmallow")
 * [Structure Your Project with Flask Blueprint](https://nahidsaikat.com/blog/structure-your-project-with-flask-blueprint/ "Structure Your Project with Flask Blueprint")
 * [From CSV to Google Sheet Using Python](https://nahidsaikat.com/blog/from-csv-to-google-sheet-using-python/ "From CSV to Google Sheet Using Python")
@@ -42,10 +43,18 @@
 * [GST – Refund Voucher](https://nahidsaikat.com/blog/2017/09/16/gst-refund-voucher/ "GST - Refund Voucher")
 * [GST – Job Work Process](https://nahidsaikat.com/blog/2017/08/26/gst-job-work-process/ "GST - Job Work Process")
 
-<hr>
 
-[Gatsby Template](https://github.com/alxshelepenok/gatsby-starter-lumen)
-<hr>
+## Environment
+* go version go1.20.4 darwin/amd64
+* hugo v0.121.2-6d5b44305eaa9d0a157946492a6f319da38de154+extended darwin/amd64 BuildDate=2024-01-05T12:21:15Z VendorInfo=brew
+
+[Hugo Template](https://themes.gohugo.io/themes/hugo-blog-awesome/)
+
+## Commands
+```bash
+-> hugo server                                 # run the server locally
+-> hugo new posts/my-first-post/index.md       # create new blog post/article
+```
 
 ## License
 The MIT License (MIT)
