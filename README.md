@@ -1,5 +1,6 @@
 ## Table of contents
 ### Python
+* [Serialization and Persistence of Python Object - Part 1](https://nahidsaikat.com/posts/serialization-and-persistence-of-python-object-part-1/ "Serialization and Persistence of Python Object - Part 1")
 * [What You Can Do with Python's F-String](https://nahidsaikat.com/posts/what-you-can-do-with-fstrings-in-python/ "What You Can Do with Python's F-String")
 * [Some New Features of Python 3.9](https://nahidsaikat.com/blog/some-new-features-of-python-3.9/ "Some New Features of Python 3.9")
 * [Flask with SQLAlchemy & Marshmallow](https://nahidsaikat.com/blog/flask-with-sqlalchemy-and-marshmallow/ "Flask with SQLAlchemy & Marshmallow")
