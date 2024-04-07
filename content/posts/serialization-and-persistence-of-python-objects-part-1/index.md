@@ -1,12 +1,12 @@
 ---
-title: "Serialization and Persistence of Python Object - Part 1"
+title: "Serialization and Persistence of Python Objects - Part 1"
 date: "2024-04-02T20:23:29+06:00"
 tags:
   - "Python"
 description: "Python has some build-in modules that offers us to serialize and persists python object into a file and also allows us to de-serialize and use them from the file."
 ---
 
-![Serialization and Persistence of Python Object](serialization-persistence.png "Serialization and Persistence of Python Object")
+![Serialization and Persistence of Python Objects](serialization-persistence.png "Serialization and Persistence of Python Objects")
 <center>
 Image by <a href="https://pixabay.com/users/acatxio-20233758/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7955446">AcatXIo</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=7955446">Pixabay</a>
 </center>
