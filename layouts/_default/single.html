@@ -1,0 +1,64 @@
+{{ define "main" }}
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">{{ .Title }}</h1>
+                {{ with .Date }}
+                {{ $ISO_time := dateFormat "2006-01-02T15:04:05-07:00" . }}
+                <div class="post-meta">
+                    <time datetime="{{ $ISO_time }}" itemprop="datePublished"> {{ . | time.Format ":date_medium" }} </time>
+                </div>
+                {{ end }}
+            </header>
+            {{ partial "toc.html" .}}
+            <div class="page-content">
+                {{ .Content }}
+            </div>
+        </article>
+        {{- partial "comments.html" . -}}
+    </main>
+
+    <!-- Custom logic: add links to recent posts starts -->
+    {{- $current := . }}
+    {{- $excludeUrls := site.Params.noRecentPosts }}
+    {{- $exclude := false }}
+
+    {{- range $excludeUrls }}
+    {{- if strings.HasPrefix $current.RelPermalink . }}
+        {{- $exclude = true }}
+    {{- end }}
+    {{- end }}
+
+    {{- if not $exclude }}
+    <hr>
+    <h4>Recent posts</h4>
+    <ul>
+        {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections | first 11 }}
+        {{- $.Scratch.Set "count" 0 }}
+
+        {{- range $pages }}
+        {{- $page := . }} <!-- Save the current page context -->
+        {{- $pageExclude := false }}
+
+        {{- range $excludeUrls }}
+            {{- if strings.HasPrefix $page.RelPermalink . }} <!-- Use $page to ensure proper context -->
+            {{- $pageExclude = true }}
+            {{- end }}
+        {{- end }}
+
+        {{- if not $pageExclude }}
+            {{- if lt ($.Scratch.Get "count") 5 }}
+            {{- if ne $page $current }}
+                <li><a href="{{ $page.Permalink }}">{{ $page.LinkTitle }}</a></li>
+                {{- $.Scratch.Add "count" 1 }}
+            {{- end }}
+            {{- end }}
+        {{- end }}
+
+        {{- end }}
+    </ul>
+    {{- end }}
+    <!-- Custom logic: add links to recent posts ends -->
+</div>
+{{ end }}

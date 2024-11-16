@@ -4,7 +4,7 @@ date: "2024-11-12T11:36:55+06:00"
 tags:
   - "Python"
   - "Dunder Methods"
-description: "Python has some build-in modules that offers us to serialize and persists python object into a file and also allows us to de-serialize and use them from the file."
+description: "Dunder methods are special kind of methods that begins and ends with double underscores. The name 'dunder' is used unofficially in the Python community. Python documentation refers them as 'special methods' or 'magic methods'."
 ---
 
 ![Dunder Methods in Python for Type Conversions](type-conversion-dunder.png "Dunder Methods in Python for Type Conversions")
