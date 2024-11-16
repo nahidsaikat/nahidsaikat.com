@@ -1,5 +1,6 @@
 ## Table of contents
 ### Python
+* [Dunder Methods in Python for Type Conversions](https://nahidsaikat.com/posts/dunder-methods-in-python-for-type-conversions/ "Dunder Methods in Python for Type Conversions")
 * [Serialization and Persistence of Python Objects - Part 2](https://nahidsaikat.com/posts/serialization-and-persistence-of-python-objects-part-2/ "Serialization and Persistence of Python Objects - Part 2")
 * [Serialization and Persistence of Python Objects - Part 1](https://nahidsaikat.com/posts/serialization-and-persistence-of-python-objects-part-1/ "Serialization and Persistence of Python Objects - Part 1")
 * [What You Can Do with Python's F-String](https://nahidsaikat.com/posts/what-you-can-do-with-fstrings-in-python/ "What You Can Do with Python's F-String")

@@ -65,3 +65,5 @@ typings/
 public/
 
 .idea
+
+.venv
