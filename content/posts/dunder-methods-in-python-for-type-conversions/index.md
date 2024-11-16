@@ -14,13 +14,13 @@ Image by <a href="https://pixabay.com/users/acatxio-20233758/?utm_source=link-at
 
 <br>
 
-Dunder methods are special kind of methods that begins and ends with double underscores. The name "dunder" is used unofficially in the Python community. Python documentation refers them as "special methods" or "magic methods". The convention for their naming is `__method__()`. They have special purpose in Python. Some are for creating and controlling objects, some are to support object-oriented features in Python, some are for arithmetic operations and many more. In this article we will discuss all the dunder methods that are used for type conversions in Python.
+Dunder methods are special kind of methods that begins and ends with double underscores. The name "dunder" is used unofficially in the Python community. Python documentation refers them as "special methods" or "magic methods". The convention for their naming is **\_\_method__()**. They have special purpose in Python. Some are for creating and controlling objects, some are to support object-oriented features in Python, some are for arithmetic operations and many more. In this article we will discuss all the dunder methods that are used for type conversions in Python.
 
 ### `x.__str__()`
 
-In Python, to convert any object into a string we use built-in function `str()`. When `str()` is call on any object, it returns the user friendly string representaion of that object. Internally it calls the dunder method `__str__()`. So, if we call `str(x)`, this invocation converts to `x.__str__(x)` internally by Python and returns what ever the `__str__()` method returns. Note that `__str__()` will always return a string value, if not Python will raise a `TypeError`. 
+In Python, to convert any object into a string we use built-in function **str(x)**. When "str(x)" is called on any object, it returns the user friendly string representaion of that object. Internally it calls the dunder method \_\_str__(). So, if we call "str(x)", this invocation converts to `x.__str__(x)` by Python and returns what ever the \_\_str__() method returns. Note that \_\_str__() should always return a string value, if not Python will raise a "TypeError". 
 
-There is a built-in `__str__` method defined for all the classes across Python that returns general information like the class this object belongs-to and the objects memory address. But we can override this behavior and return more meaningful information by overriding `__str__()` method in a class. When we call `print()` built-in function on any object it also call `__str__()` method internally.
+There is a built-in \_\_str__ method defined for all the classes across Python that returns general information like the class this object belongs-to and the objects memory address. But we can override this behavior and return more meaningful information by overriding \_\_str__() method in a class. Following is an example.
 
 ```python
 class Person:
@@ -32,13 +32,13 @@ class Person:
         return f"Name is {self.name} and age is {self.age}"
 
 obj = Person("Nahid", 30)
-print(obj)
+print(str(obj))
 # Name is Nahid and age is 30
 ```
 
 ### `x.__repr__()`
 
-`__repr__()` is called by Python when we invoke `repr()` function on any object. This method should return the official representation of an object which is usually used by the developers mostly instead of users. The returned value of `__repr__()` should be a valid Python expression string that if we evaluate should recreate the object itself. When a class doesn't define `__str__()` but `__repr__()` is defined then after calling `str()` function on that class's object will invoke `__repr__()`.
+"\_\_repr__()" is called by Python when we invoke **repr(x)** function on any object. This method should return the official representation of an object which is usually used by the developers mostly instead of users. The returned value of \_\_repr__() should be a valid Python expression string that if we evaluate should recreate the object itself. When a class doesn't define \_\_str__() but \_\_repr__() is defined then after calling **str(x)** function on that class's object will invoke \_\_repr__().
 
 ```python
 class Person:
@@ -63,7 +63,7 @@ print("obj2 repr representation: ", repr(obj2))
 
 ### `x.__bool__()`
 
-Python's built-in function `bool(x)` converts value `x` to a boolean value of True or False. For the built-in types Python has its own rules to convert a value into a boolean. Python converts all the zero values(0, 0.0, "", [], {})  to **False** and all the other values to **True**. But when it comes for the object of a user defined class `bool(x)` will always return True. To customize this behavior we can implement `__bool__()` method in a class. Note that, `__bool__()` method should always return a boolean value otherwise Python will through a `TypeError` exception. In the code snippet below we will implement **"Person.`__bool__`()"** method that will return False if the age is negative or greater than 100.
+Python's built-in function **bool(x)** converts value **`x`** to a boolean value of True or False. For the built-in types Python has its own rules to convert a value into a boolean. Python converts all the zero values(0, 0.0, "", [], {})  to *False* and all the other values to *True*. But when it comes for the object of a user defined class "bool(x)" will always return True. To customize this behavior we can implement \_\_bool__() method in a class. Note that, \_\_bool__() method should always return a boolean value otherwise Python will through a "TypeError" exception. In the code snippet below we will implement `Person.__bool__()` method that will return False if the age is negative or greater than 100.
 
 ```python
 class Person:
@@ -85,7 +85,7 @@ print(bool(obj))    # False
 
 ### `x.__int__()`
 
-To convert a numeric string value or a float value into integer we use `int(x)` in Python. When we call **int('100')** it returns the numeric value of *100* and when we call **int(100.5)** it returns the numetic value of *100* rounding down the value to the closest integer. Internally Python calls `__int__()` method on the object when we call built-it "int()" function. So we can define `__int__()` on any custom class to make it work with the built-in function "int()". Note that, `__int__()` must return a integer value otherwise it will raise a `TypeError` when called with "int()". If the custom class doesn't implement `__int__()` and we call "int()" on it's object, Python will also raise a `TypeError`.
+To convert a numeric string value or a float value into integer we use **int(x)** in Python. When we call **int('100')** it returns the numeric value of *100* and when we call **int(100.5)** it returns the numetic value of *100* rounding down the value to the closest integer. Internally Python calls \_\_int__() method on the object when we call built-it "int()" function. So we can define \_\_int__() on any custom class to make it work with the built-in function "int()". Note that, \_\_int__() must return a integer value otherwise it will raise a "TypeError" when called with "int()". If the custom class doesn't implement \_\_int__() and we call "int()" on it's object, Python will also raise a "TypeError".
 
 ```python
 class MyInt:
@@ -99,7 +99,7 @@ print(int(obj))
 
 ### `x.__float__()`
 
-The built-in `float()` function converts a value into a float value. If we call **float('100')** it will convert the string value '100' into a float *100.0*. We can implement `__float__()` method on our custom class to make its object work with `float()` function. `__float__()` must return a float type value otherwise will raise `TypeError` exception. Also when we call `float()` on an object without `__float__()` method defined it will also raise `TypeError` exception.
+The built-in **float(x)** function converts a value into a float value. If we call **float('100')** it will convert the string value '100' into a float *100.0*. We can implement \_\_float__() method on our custom class to make its object work with "float(x)" function. \_\_float__() must return a float type value otherwise will raise "TypeError" exception. Also when we call "float(x)" on an object without \_\_float__() method defined it will also raise "TypeError" exception.
 
 ```python
 class MyFloat:
@@ -113,7 +113,7 @@ print(float(obj))
 
 ### `x.__bytes__()`
 
-When we call `bytes()` on any objects it return a Bytes object. Byte object is like string but only consists of byte characters. Bytes are immutable, on the other hand `bytearray()` returns mutable bytearray object. In our custom user defined class, we have to define `__bytes__()` method to make it work with `bytes()`. `__bytes__()` should always return a Bytes object, otherwise it will raise `TypeError` exception. Also if a class doesn't define `__bytes__()` method calling its object with `bytes()` will results a `TypeError` exception.
+When we call **bytes(x)** on any objects it return a Bytes object. Byte object is like string but only consists of byte characters. Bytes are immutable, on the other hand `bytearray()` returns mutable bytearray object. In our custom user defined class, we have to define \_\_bytes__() method to make it work with "bytes(x)". \_\_bytes__() should always return a Bytes object, otherwise it will raise "TypeError" exception. Also if a class doesn't define \_\_bytes__() method calling its object with "bytes(x)" will results a "TypeError" exception.
 
 ```python
 class MyBytes:
@@ -127,7 +127,7 @@ print(bytes(obj))
 
 ### `x.__complex__()`
 
-Built-in `complex()` function returns a complex number. Complex number has two parts, the real part and the imaginary part. In python we can append the letter 'j' or 'J' to a numeric literals yielding a imaginary number which can be converted to complex number by adding an integer or a float value. If we want our custom class to work with `complex()` function we have to define `__complex__()` method in the class. This method always returns a complex number, if not will raise `TypeError` exception. Same is true when we call `complex()` with an object not implementing `__complex__()` method.
+Built-in **complex(x)** function returns a complex number. Complex number has two parts, the real part and the imaginary part. In python we can append the letter 'j' or 'J' to a numeric literals yielding a imaginary number which can be converted to complex number by adding an integer or a float value. If we want our custom class to work with "complex(x)" function we have to define \_\_complex__() method in the class. This method always returns a complex number, if not will raise "TypeError" exception. Same is true when we call "complex(x)" with an object not implementing \_\_complex__() method.
 
 ```python
 class MyComplex:
