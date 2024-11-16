@@ -102,6 +102,8 @@ disqusShortname = ''
   background_color = "#fff" # by default depend on "params.defaultColor" for "light" or "auto" will be set to "#fff" for dark will be "#131418" (color of dark mode background)
   display = "standalone"
 
+###################################################################
+
 # Allow to override `browserconfig.xml` params (configuration for windows embeded browsers)
 [params.browserconfig]
   TileColor = "#2d89ef" # default windows 10 blue tile color
