@@ -1,5 +1,6 @@
 ## Table of contents
 ### Python
+* [Understanding Protocols in Python](https://nahidsaikat.com/posts/understanding-protocols-in-python/ "Understanding Protocols in Python")
 * [Dunder Methods in Python for Type Conversions](https://nahidsaikat.com/posts/dunder-methods-in-python-for-type-conversions/ "Dunder Methods in Python for Type Conversions")
 * [Serialization and Persistence of Python Objects - Part 2](https://nahidsaikat.com/posts/serialization-and-persistence-of-python-objects-part-2/ "Serialization and Persistence of Python Objects - Part 2")
 * [Serialization and Persistence of Python Objects - Part 1](https://nahidsaikat.com/posts/serialization-and-persistence-of-python-objects-part-1/ "Serialization and Persistence of Python Objects - Part 1")
@@ -58,6 +59,17 @@
 -> hugo server                                 # run the server locally
 -> hugo new posts/my-first-post/index.md       # create new blog post/article
 ```
+
+## Future Articles
+* Structural and Nominal Subtyping in Python
+* Iterable, Iterator and Generator in Python
+* Every Methods of Python Dictionary
+* What is Descriptor in Python?
+* Dunder Methods in Python for Arithmetic Operators
+* Dunder Methods in Python for Comparison Operators
+* Dunder Methods in Python for Built-in Math Functions
+* An Introduction to DuckDB Using Python
+* uv - Python's All-in-One Package and Project Manager Tool
 
 ## License
 The MIT License (MIT)
