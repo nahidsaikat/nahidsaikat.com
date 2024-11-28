@@ -3,6 +3,7 @@ title: "Understanding Protocols in Python"
 date: "2024-11-27T11:12:30+06:00"
 tags:
   - "Python"
+  - "Typing"
 description: ""
 ---
 
@@ -159,13 +160,46 @@ class ProtocolMembersDemo(Protocol):
 
 Till now we have discussed Protocols from typing perspective. But the word "Protocol" in not new in Python. Python has lots internal protocols like Iterator, contex Manager, Descriptor protocol and many more. 
 
-These protocols live mostly in the `collections.abc` module because they are implemented as abstruct base class. ABC protocols offers nominal subtyping through inheritance. A class that inherits from parent classs is considered a subtype of the parent class
+These built-in protocols consists of special methods that make up the given protocol. Like, `__iter__()` and `__next__()` methods defines iterator protocol, `__hash__()` method defines Hashable protocol, `__call__()` method defines Callable protocol and many more.
 
-Those ABC protocols from `collections.abc` consists of special methods that make up a given protocol. Like, `__iter__()` and `__next__()` methods defines iterator protocol, `__hash__()` method defines Hashable protocol, `__call__()` method defines Callable protocol and many more.
+Those protocols live mostly in the `collections.abc` module because they are implemented as abstruct base class. ABC protocols offers nominal subtyping through inheritance. A class that inherits from parent classs is considered a subtype of the parent class
 
-There is a difference between abstruct base classes and protocols. ABCs works through inheritance relationship while protocol does not require inheritance but defines a set of characteristics. 
+There is a difference between abstruct base class protocols and typing protocols. ABC protocols works through inheritance relationship while typing protocols does not require inheritance they works by defining a set of characteristics. 
 
-Note that this difference doesn't make ABCs better than protocol and vice versa. ABCs are suitable when there is hierarchy in the classes and protocols are suitable to handle totally different kinds of class that has common behavior.
+Note that this differences doesn't make ABCs better than typing protocols and vice versa. ABCs are suitable when there is hierarchy in the classes and protocols are suitable to handle totally different kinds of class that has common behavior.
+
+Following is an example of inheritance based nominal subtyping in Python,
+```python
+from abc import ABC, abstractmethod
+
+class Animal(ABC):
+    @abstractmethod
+    def eat(self) -> None:
+        ...
+
+class Dog(Animal):
+    def __init__(self, name: str):
+        self.name = name
+
+    def eat(self) -> None:
+        print(f"Dog {self.name} is eating.")
+        
+
+class Cat(ABC):
+    def __init__(self, name: str):
+        self.name = name
+
+    def eat(self) -> None:
+        print(f"Cat {self.name} is eating.")
+
+def time_to_eat(animal: Animal):
+    animal.eat()
+
+time_to_eat(Dog("Milo"))
+time_to_eat(Cat("Tobo"))
+# Dog Milo is eating.
+# Cat Tobo is eating.
+```
 
 ### Conclusion
 Python has two kinds of protocols, ABCs and typing.Protocol. We can use both of them for type checking. ABCs allows us to create an inheritance based interface while typing.Protocol allows us to create relationship based interface. With both of the Protocols, we can perform static duck typing in Python's type hint system. We can also use expernal tools like mypy, Pyright and Pyre to check proper typing before runtime.
