@@ -86,7 +86,7 @@ class FloatAdder:
 ```
 Here, "Adder" uses explicit type hint thus the class "IntAdder" will be considered as "Adder" type by the typing system. But "FloatAdder: will not be considered a "Adder" type although it implements the "add" method. It is because "FloatAdder.add" method parameter has different type.
 
-To fix the problem we need to create a generic protocol. The systax for creating a generic protocol is,
+To fix the problem, we need to create a generic protocol. The systax for creating a generic protocol is,
 ```Python
 from typing import Protocol, TypeVar
 
@@ -116,7 +116,7 @@ add(IntAdder())
 add(FloatAdder())
 ```
 
-From Python 3.12 and onwords, we can have a more simplified version of generic protocol.
+From Python 3.12 and onwards, we can have a more simplified version of generic protocol.
 ```python
 from typing import Protocol
 
@@ -202,7 +202,7 @@ time_to_eat(Cat("Tobo"))
 ```
 
 ### Conclusion
-Python has two kinds of protocols, ABCs and typing.Protocol. We can use both of them for type checking. ABCs allows us to create an inheritance based interface while typing.Protocol allows us to create relationship based interface. With both of the Protocols, we can perform static duck typing in Python's type hint system. We can also use expernal tools like mypy, Pyright and Pyre to check proper typing before runtime.
+Python has two kinds of protocols, ABCs and typing.Protocol. We can use both of them for type checking. ABCs allows us to create an inheritance based interface while typing.Protocol allows us to create relationship based interface. With both of the Protocols, we can perform static duck typing in Python's type hint system. We can also use external tools like mypy, Pyright and Pyre to check proper typing before runtime.
 
 ---
 

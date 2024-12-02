@@ -62,7 +62,7 @@
 
 ## Future Articles
 * Structural and Nominal Subtyping in Python
-* Iterable, Iterator and Generator in Python
+* Python's Built-in Abstruct Base Classes - Part 1 (Iterable, Iterator and Generator)
 * Every Methods of Python Dictionary
 * What is Descriptor in Python?
 * Dunder Methods in Python for Arithmetic Operators
@@ -70,6 +70,8 @@
 * Dunder Methods in Python for Built-in Math Functions
 * An Introduction to DuckDB Using Python
 * uv - Python's All-in-One Package and Project Manager Tool
+* Special Attributes of Python
+* Name Scoping in Python, the LEGB Rule
 
 ## License
 The MIT License (MIT)
