@@ -1,5 +1,6 @@
 ## Table of contents
 ### Python
+* [LEGB Rule and Name Scoping in Python](https://nahidsaikat.com/posts/legb-rule-and-name-scoping-in-python/ "LEGB Rule and Name Scoping in Python")
 * [Understanding Protocols in Python](https://nahidsaikat.com/posts/understanding-protocols-in-python/ "Understanding Protocols in Python")
 * [Dunder Methods in Python for Type Conversions](https://nahidsaikat.com/posts/dunder-methods-in-python-for-type-conversions/ "Dunder Methods in Python for Type Conversions")
 * [Serialization and Persistence of Python Objects - Part 2](https://nahidsaikat.com/posts/serialization-and-persistence-of-python-objects-part-2/ "Serialization and Persistence of Python Objects - Part 2")
@@ -71,7 +72,6 @@
 * An Introduction to DuckDB Using Python
 * uv - Python's All-in-One Package and Project Manager Tool
 * Special Attributes of Python
-* Name Scoping in Python, the LEGB Rule
 
 ## License
 The MIT License (MIT)
