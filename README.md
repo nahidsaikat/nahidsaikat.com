@@ -1,5 +1,6 @@
 ## Table of contents
 ### Python
+* [Every Methods of Python Dictionary](https://nahidsaikat.com/posts/every-methods-of-python-dictionary/ "Every Methods of Python Dictionary")
 * [LEGB Rule and Name Scoping in Python](https://nahidsaikat.com/posts/legb-rule-and-name-scoping-in-python/ "LEGB Rule and Name Scoping in Python")
 * [Understanding Protocols in Python](https://nahidsaikat.com/posts/understanding-protocols-in-python/ "Understanding Protocols in Python")
 * [Dunder Methods in Python for Type Conversions](https://nahidsaikat.com/posts/dunder-methods-in-python-for-type-conversions/ "Dunder Methods in Python for Type Conversions")
@@ -64,7 +65,9 @@
 ## Future Articles
 * Structural and Nominal Subtyping in Python
 * Python's Built-in Abstruct Base Classes - Part 1 (Iterable, Iterator and Generator)
-* Every Methods of Python Dictionary
+* Different Ways to Create and Merge Python Dictionary
+* Exploring Different Ways to Use Python Dictionaries
+* Python Dictionary Internals
 * What is Descriptor in Python?
 * Dunder Methods in Python for Arithmetic Operators
 * Dunder Methods in Python for Comparison Operators
