@@ -3,7 +3,8 @@ title: "Every Methods of Python Dictionary"
 date: "2024-12-27T13:27:22+06:00"
 tags:
   - "Python"
-description: ""
+  - "dict"
+description: "Python dictionary is one of the most important built-in data type. It provide efficient key-value store that maps a key to a value. Keys must be unique in a dictionary where as values can be duplicated. Also keys need to be hashable to be considered as a key. Any object that is not hashable can not be used as dictionary key."
 ---
 
 ![Every Methods of Python Dictionary](every-dictionary-methods.jpeg "Every Methods of Python Dictionary")

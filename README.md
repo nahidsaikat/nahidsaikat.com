@@ -1,5 +1,6 @@
 ## Table of contents
 ### Python
+* [Different Approaches to Create Python Dictionary](https://nahidsaikat.com/posts/different-approaches-to-create-python-dictionary/ "Different Approaches to Create Python Dictionary")
 * [Every Methods of Python Dictionary](https://nahidsaikat.com/posts/every-methods-of-python-dictionary/ "Every Methods of Python Dictionary")
 * [LEGB Rule and Name Scoping in Python](https://nahidsaikat.com/posts/legb-rule-and-name-scoping-in-python/ "LEGB Rule and Name Scoping in Python")
 * [Understanding Protocols in Python](https://nahidsaikat.com/posts/understanding-protocols-in-python/ "Understanding Protocols in Python")
@@ -65,9 +66,9 @@
 ## Future Articles
 * Structural and Nominal Subtyping in Python
 * Python's Built-in Abstruct Base Classes - Part 1 (Iterable, Iterator and Generator)
-* Different Ways to Create and Merge Python Dictionary
-* Exploring Different Ways to Use Python Dictionaries
+* How to Perform Various Operations on Python Dictionaries
 * Python Dictionary Internals
+* Comprehensions in Python
 * What is Descriptor in Python?
 * Dunder Methods in Python for Arithmetic Operators
 * Dunder Methods in Python for Comparison Operators
@@ -79,7 +80,7 @@
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2019 Nahid Saikat
+Copyright (c) 2025 Nahidur Rahman
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
