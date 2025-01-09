@@ -127,3 +127,9 @@ url = "https://stackoverflow.com/users/6427186/nahidur-rahman"
 [[params.socialIcons]]
 name = "telegram"
 url = "https://t.me/nahidsaikat"
+
+[params.shareButtons]
+  size = "medium"
+  icon = "solid"
+  networks = ["linkedin", "twitter", "reddit", "telegram", "email"]
+  
