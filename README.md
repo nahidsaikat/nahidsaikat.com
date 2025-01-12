@@ -66,16 +66,18 @@
 ## Future Articles
 * Structural and Nominal Subtyping in Python
 * Python's Built-in Abstruct Base Classes - Part 1 (Iterable, Iterator and Generator)
-* How to Perform Various Operations on Python Dictionaries
-* Python Dictionary Internals
-* Comprehensions in Python
+* Operators and Functions on Python Dictionaries (Using Operators and Built-in Functions on Python Dictionaries)
+* Exploring Dictionary Like Classes in Python
+* Behind the Scenes of Python Dictionaries (Python Dictionary Internals)
+* Container Datatypes from Collections Module (https://docs.python.org/3/library/collections.html)
+* Understanding Comprehensions in Python
 * What is Descriptor in Python?
 * Dunder Methods in Python for Arithmetic Operators
 * Dunder Methods in Python for Comparison Operators
 * Dunder Methods in Python for Built-in Math Functions
 * An Introduction to DuckDB Using Python
 * uv - Python's All-in-One Package and Project Manager Tool
-* Special Attributes of Python
+* Understanding the Special Attributes of Python
 
 ## License
 The MIT License (MIT)

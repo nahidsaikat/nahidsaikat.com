@@ -27,7 +27,7 @@
             {{- end }}
             {{- end }}
 
-            {{- if not $exclude }}
+            {{ if not .Params.disableRecentPost }}
             <hr>
             <h5>Recent posts</h5>
             <ul>
@@ -58,7 +58,7 @@
             {{- end }}
             <!-- Custom logic: add links to recent posts ends -->
 
-            <hr>
+            <hr style="margin-bottom: 30px;">
             {{ partial "share-buttons" . }}
 
         </article>

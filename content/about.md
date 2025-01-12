@@ -3,7 +3,10 @@ title: About
 description: 'Documenting my learning through blog posts.'
 author: Nahidur Rahman
 disableShare: true
+disableRecentPost: true
 ---
+
+![Blog by Nahid](/about.jpeg "Blog by Nahid")
 
 Hello, my name is Nahidur Rahman, and I am a dedicated Software Engineer hailing from Bangladesh. With a deep passion for technology and problem-solving, I have been professionally engaged in the field of software development since 2015.
 
