@@ -1,5 +1,6 @@
 ## Table of contents
 ### Python
+* [Special Attributes of Python Function](https://nahidsaikat.com/posts/special-attributes-of-python-function/ "Special Attributes of Python Function")
 * [Different Approaches to Create Python Dictionary](https://nahidsaikat.com/posts/different-approaches-to-create-python-dictionary/ "Different Approaches to Create Python Dictionary")
 * [Every Methods of Python Dictionary](https://nahidsaikat.com/posts/every-methods-of-python-dictionary/ "Every Methods of Python Dictionary")
 * [LEGB Rule and Name Scoping in Python](https://nahidsaikat.com/posts/legb-rule-and-name-scoping-in-python/ "LEGB Rule and Name Scoping in Python")
@@ -77,7 +78,11 @@
 * Dunder Methods in Python for Built-in Math Functions
 * An Introduction to DuckDB Using Python
 * uv - Python's All-in-One Package and Project Manager Tool
-* Understanding the Special Attributes of Python
+* Special Attributes of Python Method
+* Special Attributes of Python Class
+* Special Attributes of Python Module
+* Code Objects in Python
+* Frame Objects in Python
 
 ## License
 The MIT License (MIT)
