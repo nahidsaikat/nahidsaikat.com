@@ -3,7 +3,7 @@ title: "Special Attributes of Python Function"
 date: "2025-01-28T14:07:13+06:00"
 tags:
   - "Python"
-description: ""
+description: "Internally Python heavily rely on special methods and attributes. Typically special methods and attributes starts and ends with double underscores (`__`). Functions as a first class object in Python can have attributes too."
 ---
 
 ![Special Attributes of Python Function](python-function-special-attributes.png "Special Attributes of Python Function")
