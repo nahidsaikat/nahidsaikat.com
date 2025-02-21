@@ -78,11 +78,12 @@
 * Dunder Methods in Python for Built-in Math Functions
 * An Introduction to DuckDB Using Python
 * uv - Python's All-in-One Package and Project Manager Tool
-* Special Attributes of Python Method
 * Special Attributes of Python Class
 * Special Attributes of Python Module
 * Code Objects in Python
 * Frame Objects in Python
+* Essential Special Methods for Object Creation
+* Python Import System
 
 ## License
 The MIT License (MIT)
