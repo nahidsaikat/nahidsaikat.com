@@ -34,10 +34,10 @@ obj = MyClass(42)
 ```
 In the example above the call `super().__new__(cls)` actually creates the instance and returns it. 
 
-Although you can override this method but you have to do that rarely. You can use it to ensure that the object is of certain type. You can also use it to prevent creating more than one object of the class to implement the singleton pattern.
+Although you can override this method but you have to do that rarely. You can use it to ensure that the object is of a certain type. You can also use it to prevent creating more than one object of the class to implement the singleton pattern.
 
 ### `__init__` Method
-The `__init__` method is the constructor method in Python. It is called automatically after the object is created. It's an instance method that takes the object as first argument and then other arguments. The main responsibility of this method is to initialize the object's attributes. It doesn't return anything but initialize the object.
+The `__init__` method is the constructor method in Python. It is called automatically after the object is created. It's an instance method that takes the object as first argument and then other arguments. The main responsibility of this method is to initialize the object's attributes. It doesn't return anything but initializes the object.
 
 When the parent class also has the `__init__` method implemented, it will override the parent's `__init__` method. If you want to execute the parent's init method as well then you have to call that explicitly using `super().__init__([args...])`.
 
@@ -53,7 +53,7 @@ obj = MyClass(42)
 In the example above the **self** argument is the object itself and we are also passing a value which is assigned to the *value* attribute of the object.
 
 ### `__call__` Method
-You create an instance by calling the class name. Internally it invokes the `__call__` method of the metaclass which is *type*. This call method is responsible of creating the object by calling the `__new__` method of the class and initiating the object by calling `__init__` method of the class. And it finally returns the newly created object.
+You create an instance by calling the class name. Internally it invokes the `__call__` method of the metaclass which is *type*. This call method is responsible of creating the object by calling the `__new__` method of the class and initializing the object by calling `__init__` method of the class. And it finally returns the newly created object.
 
 ```python
 class CustomMeta(type):
@@ -88,7 +88,7 @@ The `__del__` method is for deleting an object. It is also called a destructor. 
 
 Although this method is not a part of object creation but it is important while destroying an object. That's why we have discussed this method here in this article.
 
-If the base class also implemented the del method then it must be explicitly called from the child method to perform deletion logic of the base class. 
+If the base class also implemented the `__del__` method then it must be explicitly called from the child method to perform deletion logic of the base class. 
 ```python
 class MyClass:
     def __init__(self, value):
