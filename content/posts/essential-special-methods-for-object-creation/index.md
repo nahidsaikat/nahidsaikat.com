@@ -13,7 +13,7 @@ Image by <a href="https://pixabay.com/users/alexandra_koch-621802/?utm_source=li
 
 <br>
 
-In Python, objects are considered as first class citizen. Virtually everything, like integers, strings, functions, classes, modules and even types themselves are considered as object. Which means they all inherit similar properties and behaviors of objects. They can have attributes and methods, they can be passed as function arguments and even they can be returned from function.
+In Python, objects are considered as first class citizens. Virtually everything, like integers, strings, functions, classes, modules and even types themselves are considered as objects. This means they all inherit similar properties and behaviors of objects. They can have attributes and methods, they can be passed as function arguments and even they can be returned from function.
 
 Python also facilitates us to create objects when we need them. Python provides class type where we can group the related data together and also define their functionality. We can instantiate objects from those classes and serve our purposes. 
 
@@ -37,9 +37,9 @@ In the example above the call `super().__new__(cls)` actually creates the instan
 Although you can override this method but you have to do that rarely. You can use it to ensure that the object is of certain type. You can also use it to prevent creating more than one object of the class to implement the singleton pattern.
 
 ### `__init__` Method
-The `__init__` method is the constructor method in Python. It is called automatically after the object is created. It's an instance method that takes the object as first argument and after that the other objects. The main responsibility of this method is to initialize the object's attribute. It doesn't return anything but initialize the object.
+The `__init__` method is the constructor method in Python. It is called automatically after the object is created. It's an instance method that takes the object as first argument and then other arguments. The main responsibility of this method is to initialize the object's attributes. It doesn't return anything but initialize the object.
 
-When the parent class also has the `__init__` method implemented, it will override the parent's init method. If you want to execute the parent's init method as well then you have to call that explicitly using `super().__init__([args...])`.
+When the parent class also has the `__init__` method implemented, it will override the parent's `__init__` method. If you want to execute the parent's init method as well then you have to call that explicitly using `super().__init__([args...])`.
 
 ```python
 class MyClass:
@@ -84,11 +84,11 @@ obj = MyClass(42)
 ```
 
 ### `__del__` Method
-The `__del__` method is for deleting an object. It is also called a destructor. When the reference count on an object reaches to zero, this method gets called. 
+The `__del__` method is for deleting an object. It is also called a destructor. When the reference count on an object reaches zero, this method gets called. 
 
 Although this method is not a part of object creation but it is important while destroying an object. That's why we have discussed this method here in this article.
 
-If the base class also implemented the del method then it must be explicitly called from the child method to perform deletion part of the base class. 
+If the base class also implemented the del method then it must be explicitly called from the child method to perform deletion logic of the base class. 
 ```python
 class MyClass:
     def __init__(self, value):
@@ -106,7 +106,7 @@ del obj
 In the above script, the *obj* has one reference count. When the **del** statement is executed the reference count becomes zero which makes Python trigger the `__del__()` method.
 
 ### Conclusion
-As objects are the first class citizen in Python, understanding how the objects are created is a valuable skill for any Python developer. Knowing this also helps write better Python code. After reading this article you should have the understanding about the internal mechanism of how Python objects are created.
+As objects are the first class citizens in Python, understanding how the objects are created is a valuable skill for any Python developer. Knowing this also helps write better Python code. After reading this article you should have the understanding of the internal mechanism of how Python objects are created.
 
 ---
 
