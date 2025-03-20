@@ -78,11 +78,11 @@
 * Dunder Methods in Python for Built-in Math Functions
 * An Introduction to DuckDB Using Python
 * uv - Python's All-in-One Package and Project Manager Tool
-* Special Attributes of Python Class
 * Code Objects in Python
 * Frame Objects in Python
 * Python Import System
 * Meta Programming in Python
+* Setup Key Auth Plugin in Kong API Gateway on Kubernetes (Minikube)
 
 ## License
 The MIT License (MIT)
