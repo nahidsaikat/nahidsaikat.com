@@ -82,7 +82,7 @@
 * Frame Objects in Python
 * Python Import System
 * Meta Programming in Python
-* Setup Key Auth Plugin in Kong API Gateway on Kubernetes (Minikube)
+* Different Approaches to Achieve Concurrency in Python
 
 ## License
 The MIT License (MIT)
