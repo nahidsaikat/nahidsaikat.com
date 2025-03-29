@@ -5,7 +5,7 @@ tags:
   - "MongoDB"
   - "AWS"
   - "S3"
-description: ""
+description: "Recently at my work we had a requirement to push new data from MongoDB to S3. The data in the MongoDB are the stream of events, so there will be huge amount of data inserted in the DB everyday. We set a TTL on the database so that the old data aumatically gets deleted. And for the backup purpose we planned to push the data to S3."
 ---
 
 ![Stream Data to S3 Using `mongoexport` Tool](mongoexport-tool.jpeg "Stream Data to S3 Using `mongoexport` Tool")
@@ -230,6 +230,6 @@ if __name__ == "__main__":
 ```
 
 ### Conclusion
-
+mongoexport is a database tool that produces a JSON or CSV export of data stored in a MongoDB instance. In this article we have used this tool programatically using Python to produce JSON data and stream those data to S3. Hope you have learned something new from this article.
 
 ---
