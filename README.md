@@ -1,5 +1,6 @@
 ## Table of contents
 ### Python
+* [Understanding Comprehensions in Python](https://nahidsaikat.com/posts/understanding-comprehensions-in-python/ "Understanding Comprehensions in Python")
 * [Special Attributes of Python Class](https://nahidsaikat.com/posts/special-attributes-of-python-class/ "Special Attributes of Python Class")
 * [Stream Data to S3 Using `mongoexport` Tool](https://nahidsaikat.com/posts/stream-data-to-s3-using-mongoexport-tool/ "Stream Data to S3 Using `mongoexport` Tool")
 * [Special Attributes of Python Function](https://nahidsaikat.com/posts/special-attributes-of-python-function/ "Special Attributes of Python Function")
