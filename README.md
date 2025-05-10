@@ -18,6 +18,7 @@
 * [From CSV to Google Sheet Using Python](https://nahidsaikat.com/blog/from-csv-to-google-sheet-using-python/ "From CSV to Google Sheet Using Python")
 
 ### DevOps
+* [Bitbucket to AWS ECS Using AWS CodePipeline](https://nahidsaikat.com/blog/bitbucket-to-aws-ecs-using-aws-codepipeline/ "Bitbucket to AWS ECS Using AWS CodePipeline")
 * [Stream Data to S3 Using Kinesis and Firehose with Terraform](https://nahidsaikat.com/blog/stream-data-to-s3-using-kinesis-and-firehose-with-terraform/ "Stream Data to S3 Using Kinesis and Firehose with Terraform")
 * [Invoke AWS Lambda from AWS Step Functions with Terraform](https://nahidsaikat.com/blog/invoke-aws-lambda-from-aws-step-functions-with-terraform/ "Invoke AWS Lambda from AWS Step Functions with Terraform")
 * [Process AWS DynamoDB Streams by AWS Lambda with Terraform](https://nahidsaikat.com/blog/process-aws-dynamodb-streams-by-aws-lambda-with-terraform/ "Process AWS DynamoDB Streams by AWS Lambda with Terraform")
