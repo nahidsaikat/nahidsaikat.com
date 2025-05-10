@@ -62,6 +62,11 @@ disqusShortname = ''
     name = 'About'
     url = '/about/'
     weight = 40
+  [[Languages.en-gb.menu.main]]
+    pageRef="resume"
+    name = 'Resume'
+    url = '/resume/'
+    weight = 50
 
 [Languages.en-gb.params]
   sitename = "Blog by Nahid"
