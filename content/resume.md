@@ -9,7 +9,7 @@ disableRecentPost: true
 ## Python Backend Engineer  
 📍 Rangpur, Bangladesh | ☎️ +880 1738 656117 | ✉️ [nahidsaikatft40@gmail.com](mailto:nahidsaikatft40@gmail.com)  
 
-🔗 [LinkedIn](https://www.linkedin.com/in/nahidsaikat/ ) | 🔗 [GitHub](https://github.com/nahidsaikat/ ) | 🌐 [Portfolio](https://nahidsaikat.com )
+🔗 [LinkedIn](https://www.linkedin.com/in/nahidsaikat/ ) | 🔗 [GitHub](https://github.com/nahidsaikat/ ) | 🌐 [Blog](https://nahidsaikat.com )
 
 ---
 
@@ -93,9 +93,9 @@ Experienced Software Engineer with **9 years of expertise in Python, Django, Fla
 | **Frameworks**   | Django, Flask, FastAPI, Fiber     |
 | **Databases**    | MySQL, PostgreSQL, DynamoDB |
 | **Cloud**        | AWS, GCP               |
-| **DevOps Tools** | Docker, Kubernetes, Terraform, Redis, Celery, OpenSearch |
-| **Testing**      | PyTest, Behave         |
-| **Others**       | Git, jQuery, Scrum     |
+| **DevOps Tools** | Docker, Kubernetes, Terraform, Redis, Celery, OpenSearch, CI/CD |
+| **Testing**      | Pytest, Behave         |
+| **Others**       | SQLAlchemy, jQuery, Git, Scrum     |
 
 ---
 
@@ -112,4 +112,4 @@ IUBAT
 ---
 
 ## 📥 Download Full Resume  
-📄 [Download as PDF](https://drive.google.com/file/d/1wUl8yDySAzidXGrFprejB-_a189wWB5n/view?usp=drive_link) *(Update this link with your actual PDF path or file)*
+📄 [Download as PDF](https://drive.google.com/file/d/1wUl8yDySAzidXGrFprejB-_a189wWB5n/view?usp=drive_link)
